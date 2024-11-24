@@ -1,0 +1,3416 @@
+Type: GHG
+StationName: DUC2
+LoggerModel: LI-7500DS Open Path CO2/H2O Analyzer
+SerialNo: smart3-00495
+Program: null
+Table: Flux_Data
+Frequency: 20.0 Hz
+Timezone: Etc/GMT+6
+Timestamp: 2022-09-04 08:00
+Contents:
+  .data:
+    Model: LI-7500DS Open Path CO2/H2O Analyzer
+    SN: 75D-4392
+    Instrument: smart3-00495
+    File Type: '2'
+    Software Version: 8.9.0
+    Timestamp: 08:00:00
+    Timezone: Etc/GMT+6
+    Header:
+      col_0: DATAH
+      col_1: Seconds
+      col_2: Nanoseconds
+      col_3: Sequence Number
+      col_4: Diagnostic Value
+      col_5: Diagnostic Value 2
+      col_6: DS Diagnostic Value
+      col_7: Date
+      col_8: Time
+      col_9: CO2 Absorptance
+      col_10: H2O Absorptance
+      col_11: CO2 (mmol/m^3)
+      col_12: CO2 (mg/m^3)
+      col_13: H2O (mmol/m^3)
+      col_14: H2O (g/m^3)
+      col_15: Temperature (C)
+      col_16: Pressure (kPa)
+      col_17: '---'
+      col_18: '---'
+      col_19: '---'
+      col_20: '---'
+      col_21: Cooler Voltage (V)
+      col_22: Chopper Cooler Voltage (V)
+      col_23: Vin SmartFlux (V)
+      col_24: CO2 (umol/mol)
+      col_25: H2O (mmol/mol)
+      col_26: Dew Point (C)
+      col_27: CO2 Signal Strength
+      col_28: H2O Sample
+      col_29: H2O Reference
+      col_30: CO2 Sample
+      col_31: CO2 Reference
+      col_32: HIT Power (W)
+      col_33: Vin HIT (V)
+      col_34: Vin DSI (V)
+      col_35: U (m/s)
+      col_36: V (m/s)
+      col_37: W (m/s)
+      col_38: T (C)
+      col_39: Anemometer Diagnostics
+      col_40: CH4 Seconds
+      col_41: CH4 Nanoseconds
+      col_42: CH4 (umol/mol)
+      col_43: CH4 (mmol/m^3)
+      col_44: CH4 Temperature
+      col_45: CH4 Pressure
+      col_46: CH4 Signal Strength
+      col_47: CH4 Thermocouple Input 1
+      col_48: CH4 Thermocouple Input 2
+      col_49: CH4 Thermocouple Input 3
+      col_50: CH4 Diagnostic Value
+      col_51: CH4 Drop Rate (%)
+      col_52: CHK
+  .metadata:
+    Site:
+      site_name: YOUNG_CE
+      altitude: '602.3'
+      latitude: '50.3623085'
+      longitude: '-100.2024384'
+      canopy_height: '2.4'
+      displacement_height: '0.0'
+      roughness_length: '0.0'
+    Station:
+      station_name: DUC2
+      logger_id: smart3-00495
+      logger_sw_version: 8.9.0
+    Timing:
+      acquisition_frequency: '20.0'
+      file_duration: '30'
+    Instruments:
+      instr_1_manufacturer: gill
+      instr_1_model: wmpro_1
+      instr_1_sn: W201905
+      instr_1_sw_version: 2329-701-01
+      instr_1_id: ''
+      instr_1_height: '4.08'
+      instr_1_wformat: uvw
+      instr_1_wref: spar
+      instr_1_north_offset: '0'
+      instr_1_head_corr: '1'
+      instr_1_northward_separation: '0.0'
+      instr_1_eastward_separation: '0.0'
+      instr_1_vertical_separation: '0.0'
+      instr_2_manufacturer: licor
+      instr_2_model: li7500ds_1
+      instr_2_sn: 75D-4392
+      instr_2_id: smart3-00495
+      instr_2_sw_version: 8.9.0
+      instr_2_tube_length: '100.0'
+      instr_2_tube_diameter: '5.334'
+      instr_2_tube_flowrate: '0'
+      instr_2_northward_separation: '20'
+      instr_2_eastward_separation: '-8'
+      instr_2_vertical_separation: '0.0'
+      instr_3_manufacturer: licor
+      instr_3_model: li7700_2
+      instr_3_sn: TG1-0689
+      instr_3_id: TG1-0689
+      instr_3_sw_version: 1.0.29
+      instr_3_tube_length: '0.0'
+      instr_3_tube_diameter: '0.0'
+      instr_3_tube_flowrate: '0.0'
+      instr_3_northward_separation: '33.5'
+      instr_3_eastward_separation: '0.0'
+      instr_3_vertical_separation: '0'
+    FileDescription:
+      separator: tab
+      flag_discards_if_above: '0'
+      header_rows: '8'
+      data_label: DATA
+      col_1_variable: ignore
+      col_1_instrument: li7500ds_1
+      col_1_measure_type: ''
+      col_1_unit_in: ''
+      col_1_conversion: none
+      col_1_min_value: '0'
+      col_1_max_value: '0'
+      col_1_unit_out: ''
+      col_1_a_value: '0'
+      col_1_b_value: '0'
+      col_1_nom_timelag: '0'
+      col_1_min_timelag: '0'
+      col_1_max_timelag: '0'
+      col_2_variable: ignore
+      col_2_instrument: li7500ds_1
+      col_2_measure_type: ''
+      col_2_unit_in: ''
+      col_2_conversion: none
+      col_2_min_value: '0'
+      col_2_max_value: '0'
+      col_2_unit_out: ''
+      col_2_a_value: '0'
+      col_2_b_value: '0'
+      col_2_nom_timelag: '0'
+      col_2_min_timelag: '0'
+      col_2_max_timelag: '0'
+      col_3_variable: ignore
+      col_3_instrument: li7500ds_1
+      col_3_measure_type: ''
+      col_3_unit_in: ''
+      col_3_conversion: none
+      col_3_min_value: '0'
+      col_3_max_value: '0'
+      col_3_unit_out: ''
+      col_3_a_value: '0'
+      col_3_b_value: '0'
+      col_3_nom_timelag: '0'
+      col_3_min_timelag: '0'
+      col_3_max_timelag: '0'
+      col_4_variable: diag_75
+      col_4_instrument: li7500ds_1
+      col_4_measure_type: ''
+      col_4_unit_in: ''
+      col_4_conversion: none
+      col_4_min_value: '0'
+      col_4_max_value: '0'
+      col_4_unit_out: ''
+      col_4_a_value: '0'
+      col_4_b_value: '0'
+      col_4_nom_timelag: '0'
+      col_4_min_timelag: '0'
+      col_4_max_timelag: '0'
+      col_5_variable: ignore
+      col_5_instrument: li7500ds_1
+      col_5_measure_type: ''
+      col_5_unit_in: ''
+      col_5_conversion: none
+      col_5_min_value: '0'
+      col_5_max_value: '0'
+      col_5_unit_out: ''
+      col_5_a_value: '0'
+      col_5_b_value: '0'
+      col_5_nom_timelag: '0'
+      col_5_min_timelag: '0'
+      col_5_max_timelag: '0'
+      col_6_variable: ignore
+      col_6_instrument: li7500ds_1
+      col_6_measure_type: ''
+      col_6_unit_in: ''
+      col_6_conversion: none
+      col_6_min_value: '0'
+      col_6_max_value: '0'
+      col_6_unit_out: ''
+      col_6_a_value: '0'
+      col_6_b_value: '0'
+      col_6_nom_timelag: '0'
+      col_6_min_timelag: '0'
+      col_6_max_timelag: '0'
+      col_7_variable: not_numeric
+      col_7_instrument: li7500ds_1
+      col_7_measure_type: ''
+      col_7_unit_in: ''
+      col_7_conversion: none
+      col_7_min_value: '0'
+      col_7_max_value: '0'
+      col_7_unit_out: ''
+      col_7_a_value: '0'
+      col_7_b_value: '0'
+      col_7_nom_timelag: '0'
+      col_7_min_timelag: '0'
+      col_7_max_timelag: '0'
+      col_8_variable: not_numeric
+      col_8_instrument: li7500ds_1
+      col_8_measure_type: ''
+      col_8_unit_in: ''
+      col_8_conversion: none
+      col_8_min_value: '0'
+      col_8_max_value: '0'
+      col_8_unit_out: ''
+      col_8_a_value: '0'
+      col_8_b_value: '0'
+      col_8_nom_timelag: '0'
+      col_8_min_timelag: '0'
+      col_8_max_timelag: '0'
+      col_9_variable: ignore
+      col_9_instrument: li7500ds_1
+      col_9_measure_type: ''
+      col_9_unit_in: ''
+      col_9_conversion: none
+      col_9_min_value: '0'
+      col_9_max_value: '0'
+      col_9_unit_out: ''
+      col_9_a_value: '0'
+      col_9_b_value: '0'
+      col_9_nom_timelag: '0'
+      col_9_min_timelag: '0'
+      col_9_max_timelag: '0'
+      col_10_variable: ignore
+      col_10_instrument: li7500ds_1
+      col_10_measure_type: ''
+      col_10_unit_in: ''
+      col_10_conversion: none
+      col_10_min_value: '0'
+      col_10_max_value: '0'
+      col_10_unit_out: ''
+      col_10_a_value: '0'
+      col_10_b_value: '0'
+      col_10_nom_timelag: '0'
+      col_10_min_timelag: '0'
+      col_10_max_timelag: '0'
+      col_11_variable: co2
+      col_11_instrument: li7500ds_1
+      col_11_measure_type: molar_density
+      col_11_unit_in: mmol_m3
+      col_11_conversion: none
+      col_11_min_value: '0'
+      col_11_max_value: '0'
+      col_11_unit_out: ''
+      col_11_a_value: '0'
+      col_11_b_value: '0'
+      col_11_nom_timelag: '0'
+      col_11_min_timelag: '0'
+      col_11_max_timelag: '0'
+      col_12_variable: ignore
+      col_12_instrument: li7500ds_1
+      col_12_measure_type: ''
+      col_12_unit_in: ''
+      col_12_conversion: none
+      col_12_min_value: '0'
+      col_12_max_value: '0'
+      col_12_unit_out: ''
+      col_12_a_value: '0'
+      col_12_b_value: '0'
+      col_12_nom_timelag: '0'
+      col_12_min_timelag: '0'
+      col_12_max_timelag: '0'
+      col_13_variable: h2o
+      col_13_instrument: li7500ds_1
+      col_13_measure_type: molar_density
+      col_13_unit_in: mmol_m3
+      col_13_conversion: none
+      col_13_min_value: '0'
+      col_13_max_value: '0'
+      col_13_unit_out: ''
+      col_13_a_value: '0'
+      col_13_b_value: '0'
+      col_13_nom_timelag: '0'
+      col_13_min_timelag: '0'
+      col_13_max_timelag: '0'
+      col_14_variable: ignore
+      col_14_instrument: li7500ds_1
+      col_14_measure_type: ''
+      col_14_unit_in: ''
+      col_14_conversion: none
+      col_14_min_value: '0'
+      col_14_max_value: '0'
+      col_14_unit_out: ''
+      col_14_a_value: '0'
+      col_14_b_value: '0'
+      col_14_nom_timelag: '0'
+      col_14_min_timelag: '0'
+      col_14_max_timelag: '0'
+      col_15_variable: air_t
+      col_15_instrument: li7500ds_1
+      col_15_measure_type: ''
+      col_15_unit_in: celsius
+      col_15_conversion: none
+      col_15_min_value: '0'
+      col_15_max_value: '0'
+      col_15_unit_out: ''
+      col_15_a_value: '0'
+      col_15_b_value: '0'
+      col_15_nom_timelag: '0'
+      col_15_min_timelag: '0'
+      col_15_max_timelag: '0'
+      col_16_variable: air_p
+      col_16_instrument: li7500ds_1
+      col_16_measure_type: ''
+      col_16_unit_in: kpa
+      col_16_conversion: none
+      col_16_min_value: '0'
+      col_16_max_value: '0'
+      col_16_unit_out: ''
+      col_16_a_value: '0'
+      col_16_b_value: '0'
+      col_16_nom_timelag: '0'
+      col_16_min_timelag: '0'
+      col_16_max_timelag: '0'
+      col_17_variable: ignore
+      col_17_instrument: li7500ds_1
+      col_17_measure_type: ''
+      col_17_unit_in: ''
+      col_17_conversion: none
+      col_17_min_value: '0'
+      col_17_max_value: '0'
+      col_17_unit_out: ''
+      col_17_a_value: '0'
+      col_17_b_value: '0'
+      col_17_nom_timelag: '0'
+      col_17_min_timelag: '0'
+      col_17_max_timelag: '0'
+      col_18_variable: ignore
+      col_18_instrument: li7500ds_1
+      col_18_measure_type: ''
+      col_18_unit_in: ''
+      col_18_conversion: none
+      col_18_min_value: '0'
+      col_18_max_value: '0'
+      col_18_unit_out: ''
+      col_18_a_value: '0'
+      col_18_b_value: '0'
+      col_18_nom_timelag: '0'
+      col_18_min_timelag: '0'
+      col_18_max_timelag: '0'
+      col_19_variable: ignore
+      col_19_instrument: li7500ds_1
+      col_19_measure_type: ''
+      col_19_unit_in: ''
+      col_19_conversion: none
+      col_19_min_value: '0'
+      col_19_max_value: '0'
+      col_19_unit_out: ''
+      col_19_a_value: '0'
+      col_19_b_value: '0'
+      col_19_nom_timelag: '0'
+      col_19_min_timelag: '0'
+      col_19_max_timelag: '0'
+      col_20_variable: ignore
+      col_20_instrument: li7500ds_1
+      col_20_measure_type: ''
+      col_20_unit_in: ''
+      col_20_conversion: none
+      col_20_min_value: '0'
+      col_20_max_value: '0'
+      col_20_unit_out: ''
+      col_20_a_value: '0'
+      col_20_b_value: '0'
+      col_20_nom_timelag: '0'
+      col_20_min_timelag: '0'
+      col_20_max_timelag: '0'
+      col_21_variable: ignore
+      col_21_instrument: li7500ds_1
+      col_21_measure_type: ''
+      col_21_unit_in: ''
+      col_21_conversion: none
+      col_21_min_value: '0'
+      col_21_max_value: '0'
+      col_21_unit_out: ''
+      col_21_a_value: '0'
+      col_21_b_value: '0'
+      col_21_nom_timelag: '0'
+      col_21_min_timelag: '0'
+      col_21_max_timelag: '0'
+      col_22_variable: ignore
+      col_22_instrument: li7500ds_1
+      col_22_measure_type: ''
+      col_22_unit_in: ''
+      col_22_conversion: none
+      col_22_min_value: '0'
+      col_22_max_value: '0'
+      col_22_unit_out: ''
+      col_22_a_value: '0'
+      col_22_b_value: '0'
+      col_22_nom_timelag: '0'
+      col_22_min_timelag: '0'
+      col_22_max_timelag: '0'
+      col_23_variable: vin_sf
+      col_23_instrument: li7500ds_1
+      col_23_measure_type: ''
+      col_23_unit_in: V
+      col_23_conversion: none
+      col_23_min_value: '0'
+      col_23_max_value: '0'
+      col_23_unit_out: ''
+      col_23_a_value: '0'
+      col_23_b_value: '0'
+      col_23_nom_timelag: '0'
+      col_23_min_timelag: '0'
+      col_23_max_timelag: '0'
+      col_24_variable: co2
+      col_24_instrument: li7500ds_1
+      col_24_measure_type: mole_fraction
+      col_24_unit_in: ppm
+      col_24_conversion: none
+      col_24_min_value: '0'
+      col_24_max_value: '0'
+      col_24_unit_out: ''
+      col_24_a_value: '0'
+      col_24_b_value: '0'
+      col_24_nom_timelag: '0'
+      col_24_min_timelag: '0'
+      col_24_max_timelag: '0'
+      col_25_variable: h2o
+      col_25_instrument: li7500ds_1
+      col_25_measure_type: mole_fraction
+      col_25_unit_in: ppt
+      col_25_conversion: none
+      col_25_min_value: '0'
+      col_25_max_value: '0'
+      col_25_unit_out: ''
+      col_25_a_value: '0'
+      col_25_b_value: '0'
+      col_25_nom_timelag: '0'
+      col_25_min_timelag: '0'
+      col_25_max_timelag: '0'
+      col_26_variable: dew_point
+      col_26_instrument: li7500ds_1
+      col_26_measure_type: ''
+      col_26_unit_in: celsius
+      col_26_conversion: none
+      col_26_min_value: '0'
+      col_26_max_value: '0'
+      col_26_unit_out: ''
+      col_26_a_value: '0'
+      col_26_b_value: '0'
+      col_26_nom_timelag: '0'
+      col_26_min_timelag: '0'
+      col_26_max_timelag: '0'
+      col_27_variable: co2_signal_strength_7500
+      col_27_instrument: li7500ds_1
+      col_27_measure_type: ''
+      col_27_unit_in: ''
+      col_27_conversion: none
+      col_27_min_value: '0'
+      col_27_max_value: '0'
+      col_27_unit_out: ''
+      col_27_a_value: '0'
+      col_27_b_value: '0'
+      col_27_nom_timelag: '0'
+      col_27_min_timelag: '0'
+      col_27_max_timelag: '0'
+      col_28_variable: ignore
+      col_28_instrument: li7500ds_1
+      col_28_measure_type: ''
+      col_28_unit_in: ''
+      col_28_conversion: none
+      col_28_min_value: '0'
+      col_28_max_value: '0'
+      col_28_unit_out: ''
+      col_28_a_value: '0'
+      col_28_b_value: '0'
+      col_28_nom_timelag: '0'
+      col_28_min_timelag: '0'
+      col_28_max_timelag: '0'
+      col_29_variable: ignore
+      col_29_instrument: li7500ds_1
+      col_29_measure_type: ''
+      col_29_unit_in: ''
+      col_29_conversion: none
+      col_29_min_value: '0'
+      col_29_max_value: '0'
+      col_29_unit_out: ''
+      col_29_a_value: '0'
+      col_29_b_value: '0'
+      col_29_nom_timelag: '0'
+      col_29_min_timelag: '0'
+      col_29_max_timelag: '0'
+      col_30_variable: ignore
+      col_30_instrument: li7500ds_1
+      col_30_measure_type: ''
+      col_30_unit_in: ''
+      col_30_conversion: none
+      col_30_min_value: '0'
+      col_30_max_value: '0'
+      col_30_unit_out: ''
+      col_30_a_value: '0'
+      col_30_b_value: '0'
+      col_30_nom_timelag: '0'
+      col_30_min_timelag: '0'
+      col_30_max_timelag: '0'
+      col_31_variable: ignore
+      col_31_instrument: li7500ds_1
+      col_31_measure_type: ''
+      col_31_unit_in: ''
+      col_31_conversion: none
+      col_31_min_value: '0'
+      col_31_max_value: '0'
+      col_31_unit_out: ''
+      col_31_a_value: '0'
+      col_31_b_value: '0'
+      col_31_nom_timelag: '0'
+      col_31_min_timelag: '0'
+      col_31_max_timelag: '0'
+      col_32_variable: ignore
+      col_32_instrument: li7500ds_1
+      col_32_measure_type: ''
+      col_32_unit_in: ''
+      col_32_conversion: none
+      col_32_min_value: '0'
+      col_32_max_value: '0'
+      col_32_unit_out: ''
+      col_32_a_value: '0'
+      col_32_b_value: '0'
+      col_32_nom_timelag: '0'
+      col_32_min_timelag: '0'
+      col_32_max_timelag: '0'
+      col_33_variable: ignore
+      col_33_instrument: li7500ds_1
+      col_33_measure_type: ''
+      col_33_unit_in: ''
+      col_33_conversion: none
+      col_33_min_value: '0'
+      col_33_max_value: '0'
+      col_33_unit_out: ''
+      col_33_a_value: '0'
+      col_33_b_value: '0'
+      col_33_nom_timelag: '0'
+      col_33_min_timelag: '0'
+      col_33_max_timelag: '0'
+      col_34_variable: ignore
+      col_34_instrument: li7500ds_1
+      col_34_measure_type: ''
+      col_34_unit_in: ''
+      col_34_conversion: none
+      col_34_min_value: '0'
+      col_34_max_value: '0'
+      col_34_unit_out: ''
+      col_34_a_value: '0'
+      col_34_b_value: '0'
+      col_34_nom_timelag: '0'
+      col_34_min_timelag: '0'
+      col_34_max_timelag: '0'
+      col_35_variable: u
+      col_35_instrument: wmpro_1
+      col_35_measure_type: ''
+      col_35_unit_in: m_sec
+      col_35_conversion: none
+      col_35_min_value: '0'
+      col_35_max_value: '0'
+      col_35_unit_out: ''
+      col_35_a_value: '0'
+      col_35_b_value: '0'
+      col_35_nom_timelag: '0'
+      col_35_min_timelag: '0'
+      col_35_max_timelag: '0'
+      col_36_variable: v
+      col_36_instrument: wmpro_1
+      col_36_measure_type: ''
+      col_36_unit_in: m_sec
+      col_36_conversion: none
+      col_36_min_value: '0'
+      col_36_max_value: '0'
+      col_36_unit_out: ''
+      col_36_a_value: '0'
+      col_36_b_value: '0'
+      col_36_nom_timelag: '0'
+      col_36_min_timelag: '0'
+      col_36_max_timelag: '0'
+      col_37_variable: w
+      col_37_instrument: wmpro_1
+      col_37_measure_type: ''
+      col_37_unit_in: m_sec
+      col_37_conversion: none
+      col_37_min_value: '0'
+      col_37_max_value: '0'
+      col_37_unit_out: ''
+      col_37_a_value: '0'
+      col_37_b_value: '0'
+      col_37_nom_timelag: '0'
+      col_37_min_timelag: '0'
+      col_37_max_timelag: '0'
+      col_38_variable: ts
+      col_38_instrument: wmpro_1
+      col_38_measure_type: ''
+      col_38_unit_in: celsius
+      col_38_conversion: none
+      col_38_min_value: '0'
+      col_38_max_value: '0'
+      col_38_unit_out: ''
+      col_38_a_value: '0'
+      col_38_b_value: '0'
+      col_38_nom_timelag: '0'
+      col_38_min_timelag: '0'
+      col_38_max_timelag: '0'
+      col_39_variable: anemometer_diagnostic
+      col_39_instrument: wmpro_1
+      col_39_measure_type: ''
+      col_39_unit_in: ''
+      col_39_conversion: none
+      col_39_min_value: '0'
+      col_39_max_value: '0'
+      col_39_unit_out: ''
+      col_39_a_value: '0'
+      col_39_b_value: '0'
+      col_39_nom_timelag: '0'
+      col_39_min_timelag: '0'
+      col_39_max_timelag: '0'
+      col_40_variable: ignore
+      col_40_instrument: li7700_2
+      col_40_measure_type: ''
+      col_40_unit_in: ''
+      col_40_conversion: none
+      col_40_min_value: '0'
+      col_40_max_value: '0'
+      col_40_unit_out: ''
+      col_40_a_value: '0'
+      col_40_b_value: '0'
+      col_40_nom_timelag: '0'
+      col_40_min_timelag: '0'
+      col_40_max_timelag: '0'
+      col_41_variable: ignore
+      col_41_instrument: li7700_2
+      col_41_measure_type: ''
+      col_41_unit_in: ''
+      col_41_conversion: none
+      col_41_min_value: '0'
+      col_41_max_value: '0'
+      col_41_unit_out: ''
+      col_41_a_value: '0'
+      col_41_b_value: '0'
+      col_41_nom_timelag: '0'
+      col_41_min_timelag: '0'
+      col_41_max_timelag: '0'
+      col_42_variable: ch4
+      col_42_instrument: li7700_2
+      col_42_measure_type: mole_fraction
+      col_42_unit_in: ppm
+      col_42_conversion: none
+      col_42_min_value: '0'
+      col_42_max_value: '0'
+      col_42_unit_out: ''
+      col_42_a_value: '0'
+      col_42_b_value: '0'
+      col_42_nom_timelag: '0'
+      col_42_min_timelag: '0'
+      col_42_max_timelag: '0'
+      col_43_variable: ch4
+      col_43_instrument: li7700_2
+      col_43_measure_type: molar_density
+      col_43_unit_in: mmol_m3
+      col_43_conversion: none
+      col_43_min_value: '0'
+      col_43_max_value: '0'
+      col_43_unit_out: ''
+      col_43_a_value: '0'
+      col_43_b_value: '0'
+      col_43_nom_timelag: '0'
+      col_43_min_timelag: '0'
+      col_43_max_timelag: '0'
+      col_44_variable: air_t
+      col_44_instrument: li7700_2
+      col_44_measure_type: ''
+      col_44_unit_in: celsius
+      col_44_conversion: none
+      col_44_min_value: '0'
+      col_44_max_value: '0'
+      col_44_unit_out: ''
+      col_44_a_value: '0'
+      col_44_b_value: '0'
+      col_44_nom_timelag: '0'
+      col_44_min_timelag: '0'
+      col_44_max_timelag: '0'
+      col_45_variable: air_p
+      col_45_instrument: li7700_2
+      col_45_measure_type: ''
+      col_45_unit_in: kpa
+      col_45_conversion: none
+      col_45_min_value: '0'
+      col_45_max_value: '0'
+      col_45_unit_out: ''
+      col_45_a_value: '0'
+      col_45_b_value: '0'
+      col_45_nom_timelag: '0'
+      col_45_min_timelag: '0'
+      col_45_max_timelag: '0'
+      col_46_variable: rssi_77
+      col_46_instrument: li7700_2
+      col_46_measure_type: ''
+      col_46_unit_in: ''
+      col_46_conversion: none
+      col_46_min_value: '0'
+      col_46_max_value: '0'
+      col_46_unit_out: ''
+      col_46_a_value: '0'
+      col_46_b_value: '0'
+      col_46_nom_timelag: '0'
+      col_46_min_timelag: '0'
+      col_46_max_timelag: '0'
+      col_47_variable: ch4_tc_1
+      col_47_instrument: li7700_2
+      col_47_measure_type: ''
+      col_47_unit_in: celsius
+      col_47_conversion: none
+      col_47_min_value: '0'
+      col_47_max_value: '0'
+      col_47_unit_out: ''
+      col_47_a_value: '0'
+      col_47_b_value: '0'
+      col_47_nom_timelag: '0'
+      col_47_min_timelag: '0'
+      col_47_max_timelag: '0'
+      col_48_variable: ch4_tc_2
+      col_48_instrument: li7700_2
+      col_48_measure_type: ''
+      col_48_unit_in: celsius
+      col_48_conversion: none
+      col_48_min_value: '0'
+      col_48_max_value: '0'
+      col_48_unit_out: ''
+      col_48_a_value: '0'
+      col_48_b_value: '0'
+      col_48_nom_timelag: '0'
+      col_48_min_timelag: '0'
+      col_48_max_timelag: '0'
+      col_49_variable: ch4_tc_3
+      col_49_instrument: li7700_2
+      col_49_measure_type: ''
+      col_49_unit_in: celsius
+      col_49_conversion: none
+      col_49_min_value: '0'
+      col_49_max_value: '0'
+      col_49_unit_out: ''
+      col_49_a_value: '0'
+      col_49_b_value: '0'
+      col_49_nom_timelag: '0'
+      col_49_min_timelag: '0'
+      col_49_max_timelag: '0'
+      col_50_variable: diag_77
+      col_50_instrument: li7700_2
+      col_50_measure_type: ''
+      col_50_unit_in: ''
+      col_50_conversion: none
+      col_50_min_value: '0'
+      col_50_max_value: '0'
+      col_50_unit_out: ''
+      col_50_a_value: '0'
+      col_50_b_value: '0'
+      col_50_nom_timelag: '0'
+      col_50_min_timelag: '0'
+      col_50_max_timelag: '0'
+      col_51_variable: ignore
+      col_51_instrument: li7700_2
+      col_51_measure_type: ''
+      col_51_unit_in: ''
+      col_51_conversion: none
+      col_51_min_value: '0'
+      col_51_max_value: '0'
+      col_51_unit_out: ''
+      col_51_a_value: '0'
+      col_51_b_value: '0'
+      col_51_nom_timelag: '0'
+      col_51_min_timelag: '0'
+      col_51_max_timelag: '0'
+      col_52_variable: ignore
+      col_52_instrument: li7500ds_1
+      col_52_measure_type: ''
+      col_52_unit_in: ''
+      col_52_conversion: none
+      col_52_min_value: '0'
+      col_52_max_value: '0'
+      col_52_unit_out: ''
+      col_52_a_value: '0'
+      col_52_b_value: '0'
+      col_52_nom_timelag: '0'
+      col_52_min_timelag: '0'
+      col_52_max_timelag: '0'
+  biomet.data:
+    Instrument: smart3-00495 CK-00239
+    File Type: '2'
+    Software Version: 8.9.0
+    Timestamp: 08:00:00
+    Timezone: Etc/GMT+6
+    Header:
+      col_0: DATAH
+      col_1: DATE
+      col_2: TIME
+      col_3: ALB_1_1_1(other)
+      col_4: CHK__1_1_1(other)
+      col_5: DAQM_T_1_1_1(C)
+      col_6: DAQM_V_1_1_1(V)
+      col_7: DRM_POWER_STATUS_1_1_1(other)
+      col_8: DRM_V_BATTERY_1_1_1(V)
+      col_9: DRM_V_MAIN_1_1_1(V)
+      col_10: LWIN_1_1_1(W/m^2)
+      col_11: LWOUT_1_1_1(W/m^2)
+      col_12: PPFD_1_1_1(umol/m^2/s^1)
+      col_13: P_RAIN_1_1_1(mm)
+      col_14: RH_1_1_1(%)
+      col_15: RN_1_1_1(W/m^2)
+      col_16: SWIN_1_1_1(W/m^2)
+      col_17: SWOUT_1_1_1(W/m^2)
+      col_18: TA_1_1_1(C)
+      col_19: TCNR4_C_1_1_1(C)
+      col_20: TS_1_1_1(C)
+      col_21: TS_2_1_1(C)
+      col_22: TS_3_1_1(C)
+      col_23: CHK
+  biomet.metadata:
+    BiometFileDescription:
+      biomet_separator: tab
+      biomet_header_rows: '6'
+      biomet_file_duration: '30'
+      biomet_data_rate: '1'
+      biomet_data_label: DATA
+    BiometVariables:
+      biomet_1_variable: DATE
+      biomet_1_id: DATE
+      biomet_1_instrument: ''
+      biomet_1_unit_in: ''
+      biomet_1_gain: ''
+      biomet_1_offset: ''
+      biomet_1_unit_out: ''
+      biomet_2_variable: TIME
+      biomet_2_id: TIME
+      biomet_2_instrument: ''
+      biomet_2_unit_in: ''
+      biomet_2_gain: ''
+      biomet_2_offset: ''
+      biomet_2_unit_out: ''
+      biomet_3_variable: ALB_1_1_1
+      biomet_3_id: ALB_1_1_1
+      biomet_3_instrument: ''
+      biomet_3_unit_in: other
+      biomet_3_gain: ''
+      biomet_3_offset: ''
+      biomet_3_unit_out: ''
+      biomet_4_variable: ''
+      biomet_4_id: CHK__1_1_1
+      biomet_4_instrument: ''
+      biomet_4_unit_in: other
+      biomet_4_gain: ''
+      biomet_4_offset: ''
+      biomet_4_unit_out: ''
+      biomet_5_variable: ''
+      biomet_5_id: DAQM_T_1_1_1
+      biomet_5_instrument: ''
+      biomet_5_unit_in: C
+      biomet_5_gain: ''
+      biomet_5_offset: ''
+      biomet_5_unit_out: ''
+      biomet_6_variable: VIN_1_1_1
+      biomet_6_id: DAQM_V_1_1_1
+      biomet_6_instrument: ''
+      biomet_6_unit_in: V
+      biomet_6_gain: ''
+      biomet_6_offset: ''
+      biomet_6_unit_out: ''
+      biomet_7_variable: ''
+      biomet_7_id: DRM_POWER_STATUS_1_1_1
+      biomet_7_instrument: ''
+      biomet_7_unit_in: other
+      biomet_7_gain: ''
+      biomet_7_offset: ''
+      biomet_7_unit_out: ''
+      biomet_8_variable: ''
+      biomet_8_id: DRM_V_BATTERY_1_1_1
+      biomet_8_instrument: ''
+      biomet_8_unit_in: V
+      biomet_8_gain: ''
+      biomet_8_offset: ''
+      biomet_8_unit_out: ''
+      biomet_9_variable: ''
+      biomet_9_id: DRM_V_MAIN_1_1_1
+      biomet_9_instrument: ''
+      biomet_9_unit_in: V
+      biomet_9_gain: ''
+      biomet_9_offset: ''
+      biomet_9_unit_out: ''
+      biomet_10_variable: LWIN_1_1_1
+      biomet_10_id: LWIN_1_1_1
+      biomet_10_instrument: ''
+      biomet_10_unit_in: W/m^2
+      biomet_10_gain: ''
+      biomet_10_offset: ''
+      biomet_10_unit_out: ''
+      biomet_11_variable: LWOUT_1_1_1
+      biomet_11_id: LWOUT_1_1_1
+      biomet_11_instrument: ''
+      biomet_11_unit_in: W/m^2
+      biomet_11_gain: ''
+      biomet_11_offset: ''
+      biomet_11_unit_out: ''
+      biomet_12_variable: PPFD_1_1_1
+      biomet_12_id: PPFD_1_1_1
+      biomet_12_instrument: ''
+      biomet_12_unit_in: umol/m^2/s^1
+      biomet_12_gain: ''
+      biomet_12_offset: ''
+      biomet_12_unit_out: ''
+      biomet_13_variable: P_RAIN_1_1_1
+      biomet_13_id: P_RAIN_1_1_1
+      biomet_13_instrument: ''
+      biomet_13_unit_in: mm
+      biomet_13_gain: ''
+      biomet_13_offset: ''
+      biomet_13_unit_out: ''
+      biomet_14_variable: RH_1_1_1
+      biomet_14_id: RH_1_1_1
+      biomet_14_instrument: ''
+      biomet_14_unit_in: '%'
+      biomet_14_gain: ''
+      biomet_14_offset: ''
+      biomet_14_unit_out: ''
+      biomet_15_variable: RN_1_1_1
+      biomet_15_id: RN_1_1_1
+      biomet_15_instrument: ''
+      biomet_15_unit_in: W/m^2
+      biomet_15_gain: ''
+      biomet_15_offset: ''
+      biomet_15_unit_out: ''
+      biomet_16_variable: SWIN_1_1_1
+      biomet_16_id: SWIN_1_1_1
+      biomet_16_instrument: ''
+      biomet_16_unit_in: W/m^2
+      biomet_16_gain: ''
+      biomet_16_offset: ''
+      biomet_16_unit_out: ''
+      biomet_17_variable: SWOUT_1_1_1
+      biomet_17_id: SWOUT_1_1_1
+      biomet_17_instrument: ''
+      biomet_17_unit_in: W/m^2
+      biomet_17_gain: ''
+      biomet_17_offset: ''
+      biomet_17_unit_out: ''
+      biomet_18_variable: TA_1_1_1
+      biomet_18_id: TA_1_1_1
+      biomet_18_instrument: ''
+      biomet_18_unit_in: C
+      biomet_18_gain: ''
+      biomet_18_offset: ''
+      biomet_18_unit_out: ''
+      biomet_19_variable: ''
+      biomet_19_id: TCNR4_C_1_1_1
+      biomet_19_instrument: ''
+      biomet_19_unit_in: C
+      biomet_19_gain: ''
+      biomet_19_offset: ''
+      biomet_19_unit_out: ''
+      biomet_20_variable: TS_1_1_1
+      biomet_20_id: TS_1_1_1
+      biomet_20_instrument: ''
+      biomet_20_unit_in: C
+      biomet_20_gain: ''
+      biomet_20_offset: ''
+      biomet_20_unit_out: ''
+      biomet_21_variable: TS_2_1_1
+      biomet_21_id: TS_2_1_1
+      biomet_21_instrument: ''
+      biomet_21_unit_in: C
+      biomet_21_gain: ''
+      biomet_21_offset: ''
+      biomet_21_unit_out: ''
+      biomet_22_variable: TS_3_1_1
+      biomet_22_id: TS_3_1_1
+      biomet_22_instrument: ''
+      biomet_22_unit_in: C
+      biomet_22_gain: ''
+      biomet_22_offset: ''
+      biomet_22_unit_out: ''
+  system_config/co2app.conf:
+    LI7200:
+    - Outputs:
+      - ENet:
+        - Freq: 1.0
+        - EOL: 0A
+        - Labels: true
+        - DiagRec: true
+        - IM: true
+        - Ndx: true
+        - Time: true
+        - Date: true
+        - CO2Raw: true
+        - H2ORaw: true
+        - DiagVal: true
+        - DiagVal2: true
+        - DiagBits: true
+        - CO2D: true
+        - CO2MG: true
+        - H2OD: true
+        - H2OG: true
+        - Temp: true
+        - Pres: true
+        - Aux: true
+        - Aux2: true
+        - Aux3: true
+        - Aux4: true
+        - Cooler: true
+        - ChopperCooler: true
+        - SFVin: true
+        - CO2MF: true
+        - CO2MFd: true
+        - H2OMF: true
+        - H2OMFd: true
+        - DewPt: true
+        - APres: true
+        - DPres: true
+        - AvgTemp: true
+        - TempIn: true
+        - TempOut: true
+        - AvgSS: true
+        - CO2SS: true
+        - H2OSS: true
+        - DeltaSS: true
+        - H2OAW: true
+        - H2OAWO: true
+        - CO2AW: true
+        - CO2AWO: true
+        - MeasFlowRate: true
+        - VolFlowRate: true
+        - FlowPressure: true
+        - FlowPower: true
+        - FlowDrive: true
+        - MinDrift: true
+        - Drift: true
+        - YZ: true
+        - SECONDS: true
+        - NANOSECONDS: true
+        - CH4: true
+        - CH4D: true
+        - RSSI: true
+        - DIAG: true
+        - DSIVin: true
+        - U: true
+        - V: true
+        - W: true
+        - TS: true
+        - SOS: true
+        - AnemDiag: true
+      - Logging:
+        - Freq: 20.0
+        - Split: 30
+        - Zip: true
+        - Ext: .ghg
+        - Full: Stop
+        - 7700Status: true
+        - Ndx: true
+        - Time: true
+        - Date: true
+        - CO2Raw: true
+        - H2ORaw: true
+        - DiagVal: true
+        - DiagVal2: true
+        - DiagBits: true
+        - CO2D: true
+        - CO2MG: true
+        - H2OD: true
+        - H2OG: true
+        - Temp: true
+        - Pres: true
+        - Aux: true
+        - Aux2: true
+        - Aux3: true
+        - Aux4: true
+        - Cooler: true
+        - ChopperCooler: true
+        - SFVin: true
+        - CO2MF: true
+        - CO2MFd: true
+        - H2OMF: true
+        - H2OMFd: true
+        - DewPt: true
+        - APres: true
+        - DPres: true
+        - AvgTemp: true
+        - TempIn: true
+        - TempOut: true
+        - AvgSS: true
+        - CO2SS: true
+        - H2OSS: true
+        - DeltaSS: true
+        - H2OAW: true
+        - H2OAWO: true
+        - CO2AW: true
+        - CO2AWO: true
+        - MeasFlowRate: true
+        - VolFlowRate: true
+        - FlowPressure: true
+        - FlowPower: true
+        - FlowDrive: true
+        - MinDrift: false
+        - Drift: false
+        - YZ: false
+        - HTCBoard: ''
+        - HTCPower: true
+        - HTCVin: true
+        - SECONDS: true
+        - NANOSECONDS: true
+        - CH4: true
+        - CH4D: true
+        - TEMP: true
+        - PRESSURE: true
+        - AUX1: true
+        - AUX2: true
+        - AUX3: true
+        - AUX4: true
+        - AUXTC1: true
+        - AUXTC2: true
+        - AUXTC3: true
+        - RSSI: true
+        - DROPRATE: true
+        - AUXTCDIAG: ''
+        - DIAG: true
+        - DSIVin: true
+        - Metadata:
+          - Log: true
+          - Site:
+            - site_name: YOUNG_CE
+            - altitude: 604.8
+            - gpsformat: Decimal Degrees
+            - fluxgps: true
+            - latitude: 50.3623116667
+            - longitude: -100.20247
+            - satellites: 10
+            - canopy_height: 2.4
+            - displacement_height: 0.0
+            - roughness_length: 0.0
+          - Station:
+              station_name: DUC2
+          - Instruments:
+            - instr_1_manufacturer: gill
+            - instr_1_model: wmpro
+            - instr_1_serial_no: W201905
+            - instr_1_sw_version: 2329-701-01
+            - instr_1_height: 4.08
+            - instr_1_wformat: uvw
+            - instr_1_wref: spar
+            - instr_1_north_offset: 0
+            - instr_1_head_corr: 1
+            - instr_1_connection: 1
+            - instr_1_port: 1
+            - instr_1_rate: 32
+            - instr_2_manufacturer: licor
+            - instr_2_model: li7500ds
+            - instr_2_height: 0
+            - instr_2_north_separation: 20
+            - instr_2_east_separation: -8
+            - instr_2_vertical_separation: 0.0
+            - instr_2_tube_length: 100.0
+            - instr_2_tube_diameter: 5.334
+            - instr_3_id: ''
+            - instr_3_manufacturer: licor
+            - instr_3_model: li7700
+            - instr_3_height: 0
+            - instr_3_north_separation: 33.5
+            - instr_3_east_separation: 0.0
+            - instr_3_vertical_separation: 0
+      - WaveData: true
+    - Clock:
+        Zone: Etc/GMT+6
+    - CH4:
+        Head: TG1-0689
+    - MeteoDevices:
+      - DevList: Refresh
+      - Device: smart3-00495
+      - Model: SUTRON
+      - SyncClock: true
+    - Server:
+      - HostName: https://app1.fluxsuite.com
+      - APIKey: ''
+      - UpdateRate: 5
+    - AltServer:
+      - HostName: ''
+      - UserName: ''
+      - Password: ''
+      - FileTypes: ''
+      - NameFormat: ''
+      - TransferStart: ''
+      - TransferStop: ''
+    - Fluxes:
+        Status:
+          SmartFlux:
+          - '8100':
+              HostName: ''
+          - Camera:
+            - HostName: ''
+            - MACAddr: ''
+            - Model: ''
+            - Company: ''
+    - LI7500DS:
+        HostName: DSI-00555
+  system_config/aligner.log: 'GHG File: /home/licor/node-windmill/internal/model/runs/6186/eddypro/raw_files/2022-09-04T080000_smart3-00495.ghg
+
+    Sonic type: wmpro Sonic SN: W201905 Sonic Filter: runavg
+
+    Analyzer model:    LI-7500DS Open Path CO2/H2O Analyzer
+
+    Time range:                 1662300000 TO          1662301799
+
+    UTC time range:    2022-09-04 14:00:00 TO 2022-09-04 14:29:59
+
+    Local time range:  2022-09-04 08:00:00 TO 2022-09-04 08:29:59
+
+    Period (nsecs):    50000000
+
+    Reading sonic file: /home/licor/device/1662298200.wmpro.W201905
+
+    Reading sonic file: /home/licor/device/1662300000.wmpro.W201905
+
+    Reading sonic file: /home/licor/device/1662301800.wmpro.W201905
+
+    Sonic frequency:                     32.0156
+
+    Number of sonic data points:         58265
+
+    Number of interpolated data points:  36000
+
+    Number of missing data points:       0
+
+    Percentage missing data points:      0 %
+
+    '
+  system_config/ttyS1.json:
+    config: M1,U1,O2,L1,P9,B5,H1,NQ,E1,T1,S1,C2,A3,I1,J2,V1,X1,G0,K50,
+    instrument: WindMaster Pro 32Hz (SS) Gill Instruments Ltd
+    output_rate: '32'
+    serial_number: W201905
+    signal_processing: RETRY 0, INSTANT 1, CALIB 1
+    software_version: 2329-701-01
+    sonic_type: wmpro
+  system_config/config.json:
+    export:
+      begin-minutes: 0
+      allow-self-signed-ssl: true
+      filename: ''
+      password: ''
+      sensor_location_suffix: ''
+      end-minutes: 0
+      url: ''
+      username: ''
+      type: ''
+    uarts:
+    - output_rate: '32'
+      port: '1'
+      config: M1,U1,O2,L1,P9,B5,H1,NQ,E1,T1,S1,C2,A3,I1,J2,V1,X1,G0,K50,
+      state: active
+      serial_number: W201905
+      signal_processing: RETRY 0, INSTANT 1, CALIB 1
+      sonic_type: wmpro
+      instrument: WindMaster Pro 32Hz (SS) Gill Instruments Ltd
+      software_version: 2329-701-01
+      device: wmpro
+  system_config/usb_stats.json:
+    usb:
+      used: 2220613632
+      total: 15996116992
+      free: 13775503360
+  system_config/TG1-0689_config.xml:
+    licor:
+      li7700:
+        ver: 1.0.29
+        name: TG1-0689
+        serialnumber: TG1-0689
+        ipaddress: 192.168.13.202
+        output:
+          rate: '20'
+          waveforms: 'false'
+          status: 'false'
+          dataclock: 'false'
+          dataclocksync: 'false'
+        box:
+          output:
+            data:
+              msec: 'false'
+              seconds: 'true'
+              nanoseconds: 'true'
+              diag: 'true'
+              ch4: 'true'
+              ch4d: 'true'
+              temp: 'true'
+              pressure: 'true'
+              rssi: 'true'
+              droprate: 'true'
+              aux1: 'true'
+              aux2: 'true'
+              aux3: 'true'
+              aux4: 'true'
+              aux5: 'true'
+              aux6: 'true'
+              aux7: 'true'
+              aux8: 'true'
+              auxtc1: 'true'
+              auxtc2: 'true'
+              auxtc3: 'true'
+              chk: 'true'
+            waveforms: 'true'
+            status: 'true'
+            dataclock: 'false'
+          usb:
+            data:
+              msec: 'false'
+              seconds: 'true'
+              nanoseconds: 'true'
+              diag: 'true'
+              ch4: 'true'
+              ch4d: 'true'
+              temp: 'true'
+              pressure: 'true'
+              rssi: 'true'
+              droprate: 'true'
+              aux1: 'true'
+              aux2: 'true'
+              aux3: 'true'
+              aux4: 'true'
+              aux5: 'true'
+              aux6: 'true'
+              aux7: 'true'
+              aux8: 'true'
+              auxtc1: 'true'
+              auxtc2: 'true'
+              auxtc3: 'true'
+              chk: 'true'
+              date: 'true'
+              time: 'true'
+            status: separate_file
+            split: '0'
+            zip: 'false'
+        cfg:
+          temprange: high
+          clock:
+            time: 08:20:18
+            date: '2022-09-04'
+            zone: Etc/GMT+6
+            ptp: auto
+          network:
+            name: TG1-0689
+            configuration: manual
+            ipaddress: 192.168.13.202
+            netmask: 255.255.255.0
+            gateway: 192.168.13.31
+          aux1:
+            type: poly
+            a0: '1'
+            a1: '2'
+            a2: '3'
+            a3: '4'
+          aux2:
+            type: steinhart
+            a0: '5'
+            a1: '6'
+            a2: '7'
+            a3: '8'
+          aux3:
+            type: poly
+            a0: '9'
+            a1: '10'
+            a2: '11'
+            a3: '12'
+          aux4:
+            type: steinhart
+            a0: '13'
+            a1: '14'
+            a2: '15'
+            a3: '16'
+          aux5:
+            type: poly
+            a0: '17'
+            a1: '18'
+            a2: '19'
+            a3: '20'
+          aux6:
+            type: steinhart
+            a0: '21'
+            a1: '22'
+            a2: '23'
+            a3: '24'
+          aux7:
+            type: poly
+            a0: '25'
+            a1: '26'
+            a2: '27'
+            a3: '28'
+          aux8:
+            type: steinhart
+            a0: '29'
+            a1: '30'
+            a2: '31'
+            a3: '32'
+          dac1:
+            set: '1'
+            src: ch4
+            low: '1'
+            high: '2'
+          dac2:
+            set: '1'
+            src: temp
+            low: '3'
+            high: '4'
+          dac3:
+            set: '1'
+            src: pressure
+            low: '5'
+            high: '6'
+          dac4:
+            set: '1'
+            src: rssi
+            low: '7'
+            high: '8'
+          dac5:
+            set: '1'
+            src: rssi
+            low: '7'
+            high: '8'
+          dac6:
+            set: '1'
+            src: rssi
+            low: '7'
+            high: '8'
+          heater:
+            top:
+              heaterpower: '30'
+              control: auto
+              ontime: '20:00'
+              offtime: 07:00
+              deltat: '2'
+            bottom:
+              heaterpower: '30'
+              control: auto
+              ontime: '20:00'
+              offtime: 07:00
+              signalstrengthlevel: '40'
+          linelock:
+            lasercooler:
+              control: auto
+              temp: '23.8'
+              daccount: '0'
+            laserblock:
+              control: 'on'
+              temp: '30'
+              daccount: '0'
+          cleancycle: manual
+          spinmirror:
+            control: auto
+            ontime: 00:00
+            offtime: 00:00
+            duration: '60'
+            repeatinterval: 00:30
+            signalstrengthlevel: '50'
+            wash:
+              control: auto
+              interval: '24'
+              duration: '15'
+              signalstrengthlevel: '50'
+              coldtempthreshold: '-20'
+          sdmaddress: '2'
+        cal:
+          ch4zero: '5.58803'
+          ch4span: '9.77411e-05'
+          ch4spanconc: '3.8'
+          ch4lastzero: '2022-04-27 11:24:03'
+          ch4lastspan: '2022-04-27 11:54:05'
+          history:
+            record:
+            - time: '2021-01-15 17:36:32'
+              type: CH4 Zero
+              ch4zero: '-3.57872'
+              ch4span: '0.0001'
+            - time: '2021-01-15 17:42:18'
+              type: 'CH4 Span: 7.0582 ppm'
+              ch4zero: '-3.57872'
+              ch4span: '0.000106536'
+            - time: '2021-07-21 22:01:03'
+              type: CH4 Zero
+              ch4zero: '-2.81621'
+              ch4span: '0.000106536'
+            - time: '2021-07-21 22:09:08'
+              type: 'CH4 Span: 2.0213 ppm'
+              ch4zero: '-2.81621'
+              ch4span: '0.00010276'
+            - time: '2021-12-01 16:09:08'
+              type: CH4 Zero
+              ch4zero: '-0.703122'
+              ch4span: '0.00010276'
+            - time: '2021-12-01 16:20:21'
+              type: 'CH4 Span: 3.8 ppm'
+              ch4zero: '-0.703122'
+              ch4span: '9.80964e-05'
+            - time: '2022-04-27 11:24:03'
+              type: CH4 Zero
+              ch4zero: '5.58803'
+              ch4span: '9.80964e-05'
+            - time: '2022-04-27 11:54:05'
+              type: 'CH4 Span: 3.8 ppm'
+              ch4zero: '5.58803'
+              ch4span: '9.77411e-05'
+        cmd:
+          poll: 'false'
+          ch4zero: 'false'
+          ch4span: 'false'
+          calcommit: 'false'
+          calrollback: 'false'
+          calabort: 'false'
+          logusbstart: 'false'
+          logusbstop: 'false'
+          reboot: 'false'
+          polltest: 'false'
+          linelock: 'false'
+        cpld:
+          ver: 1.0.22 (2011-11-28 15:00)
+          motor:
+            control: '0'
+            desired_pos: '0'
+            actual_pos: '0'
+        factory:
+          serialnumber: TG1-0689
+          lasermoddepth: '9700'
+          laserstarttemp: '23.8'
+          blockstarttemp: '30'
+          blockstarttemplowrange: '5'
+          rssidropthresh: '0'
+          pzero: '59.17'
+          pspan: '15.58'
+          samplegain: '0'
+          refgain: '0'
+          mirrorpos: '500'
+          offset1: '32768'
+          delta1: '44'
+          offset2: '0'
+          delta2: '0'
+          dither: '30000'
+          sampledcoffset: '285'
+          sampleacoffset: '-859'
+          sampleopticaloffset: '0'
+          cmd:
+            commit: 'false'
+            rollback: 'false'
+  system_config/sf23_status.json:
+    avahi-daemon.service: active
+    chronyd.service: active
+    glogger-eddypro.service: active
+    glogger.service: not active
+    mosquitto.service: active
+    node-windmill.service: active
+    sf2-devmon@licor.service: not active
+    sfluxd.service: active
+    co2app.service: active
+    smartflux2-sonic_dispatch.service: active
+    systemd-timesyncd.service: not active
+    ptpd.service: active
+    ptpd_slave.service: not active
+    sonic_connection_state: active
+    glogger receiving sonic data: 'true'
+    glogger receiving gps data: 'true'
+    glogger num sats: 11
+    gps version: GPS 18x-LVC software ver. 4.40
+    ep_last_run_created: 6185
+    ep_last_aligner_log: 6185[GOOD]
+    ep_last_ep_run_log: 6185[GOOD]
+    ep_last_ep_good_run: 2022-09-04T073000_smart3-00495.ghg
+    ep_last_ep_run_copied_to_usb: 2022-09-04T073000_smart3-00495.ghg
+    daqm_port: 2
+    daqm_responsive: drm,0
+    sonic_port: 1
+    fs_configured: configured
+    fs_resolvable: resolvable
+    fs_reachable: reachable
+    fs_url_value: https://app1.fluxsuite.com
+    fs_valid_key: 'yes'
+    ds_enabled: 'disabled '
+    ds_configured: not configured
+    ds_resolvable: not resolvable
+    ds_upload_attempted: 'no'
+    ds_upload_succeeded: 'yes'
+    flash_total: 3.55G
+    flash_used: 1.45G
+    flash_available: 1.89G
+    usb_total: 16.00G
+    usb_used: 2.22G
+    usb_available: 13.78G
+    usb_mounted: 'yes'
+    usb_writable: 'yes'
+    mac_address: f8:36:9b:11:78:b9
+    sonic_files_consistently_named: 'yes'
+    sonic_files_bad_name: 'no'
+    sonic_files_clock_jump: 'no'
+    sonic_storage_within_limit: 'true'
+    exports_storage_within_limit: 'true'
+    co2_raw_storage_within_limit: 'true'
+    ghg_contact: 'Yes'
+    ghg_epoch_time: 1662301217
+    sf23_epoch_time: 1662301217
+    delta: 0
+    sf23_db_size_ok: ok
+    sf23_db_size: '113152000'
+    serial-number: smart3-00495
+    software-version: 2.4.0
+  system_config/DSI-00555_factory.xml:
+    licor:
+      li7500ds:
+        factory:
+          serialnumber: 75D-4392
+          caldate: null
+          cal:
+            co2spanconc1: '0'
+            co2spanconc2: '0'
+            h2ospanconc1: '0'
+            h2ospanconc2: '0'
+            co2spani: '0'
+            co2spanat: '0'
+            h2ospani: '0'
+            h2ospanat: '0'
+            co2zero: '1.21807'
+            co2zerodate: null
+            co2span1: '1'
+            co2span1date: null
+            co2span2: '0'
+            co2span2date: null
+            h2ozero: '1.04431'
+            h2ozerodate: null
+            h2ospan1: '1'
+            h2ospan1date: null
+            h2ospan2: '0'
+            h2ospan2date: null
+            rssi_cx: '0'
+            rssi_wx: '0'
+            rssidate: null
+          dsp_coeffs:
+            band:
+              a: '1.15'
+            co2:
+              a: '98.7362'
+              b: '21970.6'
+              c: '3.86528e+06'
+              d: '4.20815e+07'
+              e: '-1.33313e+10'
+              xs: '-0.002'
+              z: '0.0023'
+              sd1: '0.0562'
+              sd2: '-0.0901'
+              sd3: '1.913'
+            h2o:
+              a: '5705.06'
+              b: '5.34462e+06'
+              c: '-4.1361e+08'
+              xs: '0.0002'
+              z: '-0.0021'
+              sd1: '0.041'
+              sd2: '1.431'
+              sd3: '2.146'
+            rssi:
+              a: '0.2'
+              b: '2.061'
+              c: '4.535'
+              d: '0.8'
+              x0: '2.5'
+          detector_temp:
+            control: 'on'
+            setpoint: '-12.9'
+            kp: '15'
+            ti: '2'
+          chopper_temp:
+            control: 'on'
+            setpoint: '30'
+            kp: '25'
+            ti: '5'
+          chopper_motor:
+            kp: '0.5'
+            ki: '1'
+            kd: '3'
+  system_config/DSI-00555_cal.xml:
+    licor:
+      li7500ds:
+        cal:
+          co2spanconc1: '300.102'
+          co2spanconc2: '818.027'
+          h2ospanconc1: '21.1027'
+          h2ospanconc2: '0'
+          co2spani: '0.0964306'
+          co2spanat: '0.0964306'
+          h2ospani: '0.0846339'
+          h2ospanat: '0.0817358'
+          co2zero: '1.21094'
+          co2zerodate: '1651083868'
+          co2span1: '0.98604'
+          co2span1date: '1651085168'
+          co2span2: '0.144763'
+          co2span2date: '1651085632'
+          h2ozero: '1.04791'
+          h2ozerodate: '1651083882'
+          h2ospan1: '1.03185'
+          h2ospan1date: '1651084565'
+          h2ospan2: '0'
+          h2ospan2date: null
+          rssi_cx: '34902'
+          rssi_wx: '52050.3'
+          rssidate: '1638392023'
+  eddypro/eddypro_exp_fluxnet_2022-09-04T083149_exp.csv:
+    TIMESTAMP_START:
+      value: 202209040800
+    TIMESTAMP_END:
+      value: 202209040830
+    DOY_START:
+      value: 247.3332
+    DOY_END:
+      value: 247.3541
+    FILENAME_HF:
+      value: 2022-09-04T080000_smart3-00495.ghg
+    SW_IN_POT:
+      value: 562.386
+    NIGHT:
+      value: 0
+    EXPECT_NR:
+      value: 36000
+    FILE_NR:
+      value: 36000
+    CUSTOM_FILTER_NR:
+      value: 36000
+    WD_FILTER_NR:
+      value: 36000
+    SONIC_NR:
+      value: 36000
+    T_SONIC_NR:
+      value: 36000
+    CO2_NR:
+      value: 36000
+    H2O_NR:
+      value: 36000
+    CH4_NR:
+      value: 34799
+    NONE_NR:
+      value: .nan
+    TAU_NR:
+      value: 36000
+    H_NR:
+      value: 36000
+    FC_NR:
+      value: 36000
+    LE_NR:
+      value: 36000
+    FCH4_NR:
+      value: 34799
+    FNONE_NR:
+      value: .nan
+    TAU:
+      value: -0.120097
+    H:
+      value: 8.08715
+    LE:
+      value: 89.3905
+    ET:
+      value: 0.13052
+    FC:
+      value: -1.64193
+    FH2O:
+      value: 2.01419
+    FCH4:
+      value: 38.8666
+    FNONE:
+      value: .nan
+    TAU_RANDUNC_HF:
+      value: .nan
+    H_RANDUNC_HF:
+      value: .nan
+    LE_RANDUNC_HF:
+      value: .nan
+    ET_RANDUNC_HF:
+      value: .nan
+    FC_RANDUNC_HF:
+      value: .nan
+    FH2O_RANDUNC_HF:
+      value: .nan
+    FCH4_RANDUNC_HF:
+      value: .nan
+    FNONE_RANDUNC_HF:
+      value: .nan
+    SH_SINGLE:
+      value: .nan
+    SLE_SINGLE:
+      value: .nan
+    SET_SINGLE:
+      value: 0.0
+    SC_SINGLE:
+      value: .nan
+    SH2O_SINGLE:
+      value: .nan
+    SCH4_SINGLE:
+      value: .nan
+    SNONE_SINGLE:
+      value: .nan
+    FC_VADV:
+      value: 4.33569e-11
+    FH2O_VADV:
+      value: 1.43506e-12
+    FCH4_VADV:
+      value: 2.19529e-10
+    FNONE_VADV:
+      value: .nan
+    U_UNROT:
+      value: 4.2856
+    V_UNROT:
+      value: 2.44066
+    W_UNROT:
+      value: 0.0313266
+    U:
+      value: 4.93195
+    V:
+      value: -9.94718e-14
+    W:
+      value: 2.71864e-15
+    WS:
+      value: 4.93195
+    WS_MAX:
+      value: 9.18551
+    WD:
+      value: 150.165
+    WD_SIGMA:
+      value: 10.5606
+    USTAR:
+      value: 0.32521
+    TKE:
+      value: 0.879142
+    MO_LENGTH:
+      value: -356.881
+    ZL:
+      value: -0.00692667
+    BOWEN:
+      value: 0.0904698
+    TSTAR:
+      value: -0.0216232
+    T_SONIC:
+      value: 22.8247
+    TA_EP:
+      value: 15.7358
+    PA_EP:
+      value: 94.6404
+    RH_EP:
+      value: 71.1503
+    AIR_MV:
+      value: 0.0253781
+    AIR_DENSITY:
+      value: 1.13554
+    AIR_RHO_CP:
+      value: 1150.03
+    AIR_CP:
+      value: 1012.76
+    VAPOR_DENSITY:
+      value: 0.00951206
+    VAPOR_PARTIAL_PRESSURE:
+      value: 12.6815
+    VAPOR_PARTIAL_PRESSURE_SAT:
+      value: 17.8236
+    SPECIFIC_HUMIDITY:
+      value: 0.00837668
+    VPD_EP:
+      value: 5.14206
+    TDEW:
+      value: 10.4915
+    DRYAIR_PARTIAL_PRESSURE:
+      value: 93.3722
+    DRYAIR_DENSITY:
+      value: 1.12603
+    DRYAIR_MV:
+      value: 0.0257228
+    SPECIFIC_HEAT_EVAP:
+      value: 2462840.0
+    VAPOR_DRYAIR_RATIO:
+      value: 0.00844745
+    CO2_MEAS_TYPE:
+      value: 2
+    CO2_MOLAR_DENSITY:
+      value: 15.948
+    CO2_MIXING_RATIO:
+      value: 410.226
+    CO2:
+      value: 404.73
+    H2O_MEAS_TYPE:
+      value: 2
+    H2O_MOLAR_DENSITY:
+      value: 527.861
+    H2O_MIXING_RATIO:
+      value: 13.578
+    H2O:
+      value: 13.3961
+    CH4_MEAS_TYPE:
+      value: 2
+    CH4_MOLAR_DENSITY:
+      value: 0.0807496
+    CH4_MIXING_RATIO:
+      value: 1943.0
+    CH4:
+      value: 1916.97
+    NONE_MEAS_TYPE:
+      value: .nan
+    NONE_MOLAR_DENSITY:
+      value: .nan
+    NONE_MIXING_RATIO:
+      value: .nan
+    NONE:
+      value: .nan
+    CO2_TLAG_ACTUAL:
+      value: 0.05
+    CO2_TLAG_USED:
+      value: 0.05
+    CO2_TLAG_NOMINAL:
+      value: 0.0
+    CO2_TLAG_MIN:
+      value: -0.730813
+    CO2_TLAG_MAX:
+      value: 0.730813
+    H2O_TLAG_ACTUAL:
+      value: 0.05
+    H2O_TLAG_USED:
+      value: 0.05
+    H2O_TLAG_NOMINAL:
+      value: 0.0
+    H2O_TLAG_MIN:
+      value: -0.730813
+    H2O_TLAG_MAX:
+      value: 0.730813
+    CH4_TLAG_ACTUAL:
+      value: 0.1
+    CH4_TLAG_USED:
+      value: 0.1
+    CH4_TLAG_NOMINAL:
+      value: 0.0
+    CH4_TLAG_MIN:
+      value: -0.97
+    CH4_TLAG_MAX:
+      value: 0.97
+    NONE_TLAG_ACTUAL:
+      value: .nan
+    NONE_TLAG_USED:
+      value: .nan
+    NONE_TLAG_NOMINAL:
+      value: .nan
+    NONE_TLAG_MIN:
+      value: .nan
+    NONE_TLAG_MAX:
+      value: .nan
+    U_MEDIAN:
+      value: 4.95399
+    V_MEDIAN:
+      value: -0.0135591
+    W_MEDIAN:
+      value: 0.00420705
+    T_SONIC_MEDIAN:
+      value: 22.815
+    CO2_MEAS_MEDIAN:
+      value: 15.9448
+    H2O_MEAS_MEDIAN:
+      value: 526.14
+    CH4_MEAS_MEDIAN:
+      value: 0.0807421
+    NONE_MEAS_MEDIAN:
+      value: .nan
+    U_P25:
+      value: 4.4003
+    V_P25:
+      value: -0.524989
+    W_P25:
+      value: -0.257164
+    T_SONIC_P25:
+      value: 22.5833
+    CO2_MEAS_P25:
+      value: 15.9151
+    H2O_MEAS_P25:
+      value: 517.402
+    CH4_MEAS_P25:
+      value: 0.0804985
+    NONE_MEAS_P25:
+      value: .nan
+    U_P75:
+      value: 5.49234
+    V_P75:
+      value: 0.489102
+    W_P75:
+      value: 0.252473
+    T_SONIC_P75:
+      value: 23.1111
+    CO2_MEAS_P75:
+      value: 15.9816
+    H2O_MEAS_P75:
+      value: 536.222
+    CH4_MEAS_P75:
+      value: 0.080995
+    NONE_MEAS_P75:
+      value: .nan
+    U_SIGMA:
+      value: 0.910325
+    V_SIGMA:
+      value: 0.865187
+    W_SIGMA:
+      value: 0.425494
+    T_SONIC_SIGMA:
+      value: 0.315725
+    CO2_MEAS_SIGMA:
+      value: 0.0452306
+    H2O_MEAS_SIGMA:
+      value: 14.9256
+    CH4_MEAS_SIGMA:
+      value: 0.000384905
+    NONE_MEAS_SIGMA:
+      value: .nan
+    U_SKW:
+      value: -0.289113
+    V_SKW:
+      value: 0.178567
+    W_SKW:
+      value: 0.0221902
+    T_SONIC_SKW:
+      value: -0.215038
+    CO2_MEAS_SKW:
+      value: 0.0986338
+    H2O_MEAS_SKW:
+      value: 0.602996
+    CH4_MEAS_SKW:
+      value: 0.198327
+    NONE_MEAS_SKW:
+      value: .nan
+    U_KUR:
+      value: 4.1388
+    V_KUR:
+      value: 3.70643
+    W_KUR:
+      value: 4.62162
+    T_SONIC_KUR:
+      value: 2.15079
+    CO2_MEAS_KUR:
+      value: 2.63666
+    H2O_MEAS_KUR:
+      value: 3.4512
+    CH4_MEAS_KUR:
+      value: 6.22891
+    NONE_MEAS_KUR:
+      value: .nan
+    W_U_COV:
+      value: -0.0927713
+    W_T_SONIC_COV:
+      value: 0.0109631
+    W_CO2_MEAS_COV:
+      value: -0.00247566
+    W_H2O_MEAS_COV:
+      value: 1.71774
+    W_CH4_MEAS_COV:
+      value: 2.77038e-05
+    W_NONE_MEAS_COV:
+      value: .nan
+    CO2_MEAS_H2O_MEAS_COV:
+      value: -0.0903214
+    CO2_MEAS_CH4_MEAS_COV:
+      value: 6.32979e-06
+    CO2_MEAS_NONE_MEAS_COV:
+      value: .nan
+    H2O_MEAS_CH4_MEAS_COV:
+      value: 0.00325065
+    H2O_MEAS_NONE_MEAS_COV:
+      value: .nan
+    CH4_MEAS_NONE_MEAS_COV:
+      value: .nan
+    FETCH_MAX:
+      value: 22.943
+    FETCH_OFFSET:
+      value: -3.48168
+    FETCH_10:
+      value: 7.87558
+    FETCH_30:
+      value: 19.6113
+    FETCH_50:
+      value: 29.9085
+    FETCH_70:
+      value: 41.947
+    FETCH_80:
+      value: 50.1999
+    FETCH_90:
+      value: 62.8443
+    USTAR_UNCORR:
+      value: 0.322765
+    MO_LENGTH_UNCORR:
+      value: -223.79
+    ZL_UNCORR:
+      value: -0.011046
+    TAU_UNCORR:
+      value: -0.118297
+    H_UNCORR:
+      value: 12.6079
+    LE_UNCORR:
+      value: 76.2341
+    ET_UNCORR:
+      value: 0.11131
+    FC_UNCORR:
+      value: -2.47566
+    FH2O_UNCORR:
+      value: 1.71774
+    FCH4_UNCORR:
+      value: 27.7038
+    FNONE_UNCORR:
+      value: .nan
+    TAU_STAGE1:
+      value: -0.120097
+    H_STAGE1:
+      value: 12.6079
+    LE_STAGE1:
+      value: 87.6226
+    ET_STAGE1:
+      value: 0.127938
+    FC_STAGE1:
+      value: -2.8455
+    FH2O_STAGE1:
+      value: 1.97435
+    FCH4_STAGE1:
+      value: 33.1055
+    FNONE_STAGE1:
+      value: .nan
+    TAU_STAGE2:
+      value: -0.120097
+    H_STAGE2:
+      value: 7.82207
+    LE_STAGE2:
+      value: 89.7137
+    ET_STAGE2:
+      value: 0.130991
+    FC_STAGE2:
+      value: -1.64193
+    FH2O_STAGE2:
+      value: 2.02147
+    FCH4_STAGE2:
+      value: 38.8666
+    FNONE_STAGE2:
+      value: .nan
+    T_CELL:
+      value: 15.7358
+    PA_CELL:
+      value: 94.6404
+    MV_AIR_CELL_CO2:
+      value: .nan
+    MV_AIR_CELL_H2O:
+      value: .nan
+    MV_AIR_CELL_CH4:
+      value: .nan
+    MV_AIR_CELL_NONE:
+      value: .nan
+    FH2O_CELL_CO2:
+      value: .nan
+    FH2O_CELL_CH4:
+      value: .nan
+    FH2O_CELL_NONE:
+      value: .nan
+    H_CELL_CO2:
+      value: .nan
+    H_CELL_H2O:
+      value: .nan
+    H_CELL_CH4:
+      value: .nan
+    H_CELL_NONE:
+      value: .nan
+    H_BU_BOT:
+      value: .nan
+    H_BU_TOP:
+      value: .nan
+    H_BU_SPAR:
+      value: .nan
+    SPEC_CORR_LI7700_A:
+      value: 0.935437
+    SPEC_CORR_LI7700_B:
+      value: 1.4163
+    SPEC_CORR_LI7700_C:
+      value: 1.32232
+    TAU_SCF:
+      value: 1.01521
+    H_SCF:
+      value: 1.03389
+    LE_SCF:
+      value: 1.14939
+    ET_SCF:
+      value: 1.14939
+    FC_SCF:
+      value: 1.14939
+    FH2O_SCF:
+      value: 1.14939
+    FCH4_SCF:
+      value: 1.19498
+    FNONE_SCF:
+      value: .nan
+    W_T_SONIC_COV_IBROM:
+      value: .nan
+    W_T_SONIC_COV_IBROM_N1626:
+      value: .nan
+    W_T_SONIC_COV_IBROM_N0614:
+      value: .nan
+    W_T_SONIC_COV_IBROM_N0277:
+      value: .nan
+    W_T_SONIC_COV_IBROM_N0133:
+      value: .nan
+    W_T_SONIC_COV_IBROM_N0065:
+      value: .nan
+    W_T_SONIC_COV_IBROM_N0032:
+      value: .nan
+    W_T_SONIC_COV_IBROM_N0016:
+      value: .nan
+    W_T_SONIC_COV_IBROM_N0008:
+      value: .nan
+    W_T_SONIC_COV_IBROM_N0004:
+      value: .nan
+    U_NUM_SPIKES:
+      value: 66
+    V_NUM_SPIKES:
+      value: 36
+    W_NUM_SPIKES:
+      value: 13
+    T_SONIC_NUM_SPIKES:
+      value: 26
+    CO2_NUM_SPIKES:
+      value: 53
+    H2O_NUM_SPIKES:
+      value: 37
+    CH4_NUM_SPIKES:
+      value: 15
+    NONE_NUM_SPIKES:
+      value: .nan
+    CUSTOM_FILTER_NREX:
+      value: 0
+    WD_FILTER_NREX:
+      value: 0
+    SONIC_DIAG_NREX:
+      value: 0
+    CO2_DIAG_NREX:
+      value: 0
+    H2O_DIAG_NREX:
+      value: 0
+    CH4_DIAG_NREX:
+      value: 1201
+    NONE_DIAG_NREX:
+      value: .nan
+    U_SPIKE_NREX:
+      value: 114
+    V_SPIKE_NREX:
+      value: 61
+    W_SPIKE_NREX:
+      value: 25
+    T_SONIC_SPIKE_NREX:
+      value: 37
+    CO2_SPIKE_NREX:
+      value: 82
+    H2O_SPIKE_NREX:
+      value: 61
+    CH4_SPIKE_NREX:
+      value: 22
+    NONE_SPIKE_NREX:
+      value: .nan
+    U_ABSLIM_NREX:
+      value: 0
+    V_ABSLIM_NREX:
+      value: 0
+    W_ABSLIM_NREX:
+      value: 0
+    T_SONIC_ABSLIM_NREX:
+      value: 0
+    CO2_ABSLIM_NREX:
+      value: 0
+    H2O_ABSLIM_NREX:
+      value: 0
+    CH4_ABSLIM_NREX:
+      value: 0
+    NONE_ABSLIM_NREX:
+      value: .nan
+    U_VM97_TEST:
+      value: 800000099
+    V_VM97_TEST:
+      value: 800000099
+    W_VM97_TEST:
+      value: 800000099
+    T_SONIC_VM97_TEST:
+      value: 800000099
+    CO2_VM97_TEST:
+      value: 800000099
+    H2O_VM97_TEST:
+      value: 800000099
+    CH4_VM97_TEST:
+      value: 800001199
+    NONE_VM97_TEST:
+      value: .nan
+    VM97_TLAG_HF:
+      value: 89999
+    VM97_TLAG_SF:
+      value: 89999
+    VM97_AOA_HF:
+      value: 89
+    VM97_NSHW_HF:
+      value: 89
+    U_LGD:
+      value: 0.0
+    V_LGD:
+      value: 0.0
+    W_LGD:
+      value: 0.0
+    T_SONIC_LGD:
+      value: 0.0
+    CO2_LGD:
+      value: 0.0
+    H2O_LGD:
+      value: 0.0
+    CH4_LGD:
+      value: 60.05
+    NONE_LGD:
+      value: .nan
+    U_KID:
+      value: 10.2284
+    V_KID:
+      value: 8.1477
+    W_KID:
+      value: 10.425
+    T_SONIC_KID:
+      value: 7.34288
+    CO2_KID:
+      value: 14.5023
+    H2O_KID:
+      value: 15.7618
+    CH4_KID:
+      value: 5.0913
+    NONE_KID:
+      value: .nan
+    U_ZCD:
+      value: 0
+    V_ZCD:
+      value: 0
+    W_ZCD:
+      value: 0
+    T_SONIC_ZCD:
+      value: 47
+    CO2_ZCD:
+      value: 244
+    H2O_ZCD:
+      value: 11
+    CH4_ZCD:
+      value: 167
+    NONE_ZCD:
+      value: .nan
+    TAU_CORRDIFF:
+      value: 0.00449654
+    H_CORRDIFF:
+      value: 0.000864992
+    LE_CORRDIFF:
+      value: 0.0170154
+    ET_CORRDIFF:
+      value: 0.0170154
+    FC_CORRDIFF:
+      value: 0.0147212
+    FH2O_CORRDIFF:
+      value: 0.0170154
+    FCH4_CORRDIFF:
+      value: 0.0178536
+    FNONE_CORRDIFF:
+      value: .nan
+    TAU_NSR:
+      value: 1.22858
+    H_NSR:
+      value: 1.2906
+    FC_NSR:
+      value: 1.21213
+    FH2O_NSR:
+      value: 0.927534
+    FCH4_NSR:
+      value: 0.959564
+    FNONE_NSR:
+      value: .nan
+    TAU_SS:
+      value: 0
+    H_SS:
+      value: 12
+    FC_SS:
+      value: 6
+    FH2O_SS:
+      value: 2
+    FCH4_SS:
+      value: 3
+    FNONE_SS:
+      value: .nan
+    U_ITC:
+      value: 0
+    W_ITC:
+      value: 8
+    T_SONIC_ITC:
+      value: 143
+    TAU_SS_TEST:
+      value: 1
+    H_SS_TEST:
+      value: 1
+    FC_SS_TEST:
+      value: 1
+    FH2O_SS_TEST:
+      value: 1
+    FCH4_SS_TEST:
+      value: 1
+    FNONE_SS_TEST:
+      value: .nan
+    U_ITC_TEST:
+      value: 1
+    W_ITC_TEST:
+      value: 1
+    T_SONIC_ITC_TEST:
+      value: 6
+    TAU_SSITC_TEST:
+      value: 0
+    H_SSITC_TEST:
+      value: 0
+    LE_SSITC_TEST:
+      value: 0
+    ET_SSITC_TEST:
+      value: 0
+    FC_SSITC_TEST:
+      value: 0
+    FH2O_SSITC_TEST:
+      value: 0
+    FCH4_SSITC_TEST:
+      value: 0
+    FNONE_SSITC_TEST:
+      value: .nan
+    INST_LI7200_HEAD_DETECT:
+      value: .nan
+    INST_LI7200_T_OUT:
+      value: .nan
+    INST_LI7200_T_IN:
+      value: .nan
+    INST_LI7200_AUX_IN:
+      value: .nan
+    INST_LI7200_DELTA_P:
+      value: .nan
+    INST_LI7200_CHOPPER:
+      value: .nan
+    INST_LI7200_DETECTOR:
+      value: .nan
+    INST_LI7200_PLL:
+      value: .nan
+    INST_LI7200_SYNC:
+      value: .nan
+    INST_LI7500_CHOPPER:
+      value: 0
+    INST_LI7500_DETECTOR:
+      value: 0
+    INST_LI7500_PLL:
+      value: 0
+    INST_LI7500_SYNC:
+      value: 0
+    INST_LI7700_NOT_READY:
+      value: 0
+    INST_LI7700_NO_SIGNAL:
+      value: 0
+    INST_LI7700_RE_UNLOCKED:
+      value: 0
+    INST_LI7700_BAD_TEMP:
+      value: 0
+    INST_LI7700_LASER_T_UNREG:
+      value: 0
+    INST_LI7700_BLOCK_T_UNREG:
+      value: 0
+    INST_LI7700_MOTOR_SPINNING:
+      value: 1201
+    INST_LI7700_PUMP_ON:
+      value: 0
+    INST_LI7700_TOP_HEATER_ON:
+      value: 0
+    INST_LI7700_BOTTOM_HEATER_ON:
+      value: 0
+    INST_LI7700_CALIBRATING:
+      value: 0
+    INST_LI7700_MOTOR_FAILURE:
+      value: 31
+    INST_LI7700_BAD_AUX_TC1:
+      value: 36000
+    INST_LI7700_BAD_AUX_TC2:
+      value: 36000
+    INST_LI7700_BAD_AUX_TC3:
+      value: 36000
+    INST_LI7700_BOX_CONNECTED:
+      value: 36000
+    INST_LI7200_AGC_OR_RSSI:
+      value: .nan
+    INST_LI7500_AGC_OR_RSSI:
+      value: 93
+    INST_LI7700_RSSI:
+      value: .nan
+    WBOOST_APPLIED:
+      value: 0
+    AOA_METHOD:
+      value: 0
+    AXES_ROTATION_METHOD:
+      value: 1
+    ROT_YAW:
+      value: 29.6616
+    ROT_PITCH:
+      value: 0.363932
+    ROT_ROLL:
+      value: .nan
+    DETRENDING_METHOD:
+      value: 0
+    DENTRENDING_TIME_CONSTANT:
+      value: 0
+    TIMELAG_DETECTION_METHOD:
+      value: 2
+    WPL_APPLIED:
+      value: 1
+    BURBA_METHOD:
+      value: 0
+    SPECTRAL_CORRECTION_METHOD:
+      value: 1
+    FOOTPRINT_MODEL:
+      value: 0
+    LOGGER_SWVER_MAJOR:
+      value: 8
+    LOGGER_SWVER_MINOR:
+      value: 9
+    LOGGER_SWVER_REVISION:
+      value: 0
+    BADM_LOCATION_LAT:
+      value: 50.3623
+    BADM_LOCATION_LONG:
+      value: -100.202
+    BADM_LOCATION_ELEV:
+      value: 602.3
+    BADM_HEIGHTC:
+      value: 2.4
+    DISPLACEMENT_HEIGHT:
+      value: 1.608
+    ROUGHNESS_LENGTH:
+      value: 0.36
+    FILE_TIME_DURATION:
+      value: 30
+    BADM_INST_SAMPLING_INT:
+      value: 20
+    BADM_INST_AVERAGING_INT:
+      value: 30
+    MANUFACTURER_SA:
+      value: gill
+    BADM_INST_MODEL_SA:
+      value: wmpro_1
+    BADM_INST_HEIGHT_SA:
+      value: 4.08
+    BADM_INST_SA_WIND_FORMAT:
+      value: uvw
+    BADM_INST_SA_GILL_ALIGN:
+      value: spar
+    BADM_SA_OFFSET_NORTH:
+      value: 0.0
+    HPATH_SA:
+      value: 11.0
+    VPATH_SA:
+      value: 12.5
+    RESPONSE_TIME_SA:
+      value: 0.025
+    MANUFACTURER_GA_CO2:
+      value: licor
+    BADM_INST_MODEL_GA_CO2:
+      value: li7500ds_1
+    BADM_INSTPAIR_NORTHWARD_SEP_GA_CO2:
+      value: 20.0
+    BADM_INSTPAIR_EASTWARD_SEP_GA_CO2:
+      value: -8.0
+    BADM_INSTPAIR_HEIGHT_SEP_GA_CO2:
+      value: 0.0
+    BADM_INST_GA_CP_TUBE_LENGTH_GA_CO2:
+      value: .nan
+    BADM_INST_GA_CP_TUBE_IN_DIAM_GA_CO2:
+      value: .nan
+    BADM_INST_GA_CP_TUBE_FLOW_RATE_GA_CO2:
+      value: .nan
+    HPATH_GA_CO2:
+      value: 0.95
+    VPATH_GA_CO2:
+      value: 12.7
+    RESPONSE_TIME_GA_CO2:
+      value: 0.1
+    MANUFACTURER_GA_H2O:
+      value: licor
+    BADM_INST_MODEL_GA_H2O:
+      value: li7500ds_1
+    BADM_INSTPAIR_NORTHWARD_SEP_GA_H2O:
+      value: 20.0
+    BADM_INSTPAIR_EASTWARD_SEP_GA_H2O:
+      value: -8.0
+    BADM_INSTPAIR_HEIGHT_SEP_GA_H2O:
+      value: 0.0
+    BADM_INST_GA_CP_TUBE_LENGTH_GA_H2O:
+      value: .nan
+    BADM_INST_GA_CP_TUBE_IN_DIAM_GA_H2O:
+      value: .nan
+    BADM_INST_GA_CP_TUBE_FLOW_RATE_GA_H2O:
+      value: .nan
+    KRYPTON_HYDRO_KH2O_GA_H2O:
+      value: .nan
+    KRYPTON_HYDRO_KO2_GA_H2O:
+      value: .nan
+    HPATH_GA_H2O:
+      value: 0.95
+    VPATH_GA_H2O:
+      value: 12.7
+    RESPONSE_TIME_GA_H2O:
+      value: 0.1
+    MANUFACTURER_GA_CH4:
+      value: licor
+    BADM_INST_MODEL_GA_CH4:
+      value: li7700_2
+    BADM_INSTPAIR_NORTHWARD_SEP_GA_CH4:
+      value: 33.5
+    BADM_INSTPAIR_EASTWARD_SEP_GA_CH4:
+      value: 0.0
+    BADM_INSTPAIR_HEIGHT_SEP_GA_CH4:
+      value: 0.0
+    BADM_INST_GA_CP_TUBE_LENGTH_GA_CH4:
+      value: .nan
+    BADM_INST_GA_CP_TUBE_IN_DIAM_GA_CH4:
+      value: .nan
+    BADM_INST_GA_CP_TUBE_FLOW_RATE_GA_CH4:
+      value: .nan
+    HPATH_GA_CH4:
+      value: 6.35
+    VPATH_GA_CH4:
+      value: 50.0
+    RESPONSE_TIME_GA_CH4:
+      value: 0.1
+    MANUFACTURER_GA_NONE:
+      value: .nan
+    BADM_INST_MODEL_GA_NONE:
+      value: .nan
+    BADM_INSTPAIR_NORTHWARD_SEP_GA_NONE:
+      value: .nan
+    BADM_INSTPAIR_EASTWARD_SEP_GA_NONE:
+      value: .nan
+    BADM_INSTPAIR_HEIGHT_SEP_GA_NONE:
+      value: .nan
+    BADM_INST_GA_CP_TUBE_LENGTH_GA_NONE:
+      value: .nan
+    BADM_INST_GA_CP_TUBE_IN_DIAM_GA_NONE:
+      value: .nan
+    BADM_INST_GA_CP_TUBE_FLOW_RATE_GA_NONE:
+      value: .nan
+    HPATH_GA_NONE:
+      value: .nan
+    VPATH_GA_NONE:
+      value: .nan
+    RESPONSE_TIME_GA_NONE:
+      value: .nan
+    NUM_CUSTOM_VARS:
+      value: 12
+    CUSTOM_AIR_T_MEAN:
+      value: 287.961
+    CUSTOM_AIR_P_MEAN:
+      value: 94881.0
+    CUSTOM_VIN_SF_MEAN:
+      value: 12.2895
+    CUSTOM_CO2_MEAN:
+      value: 402.411
+    CUSTOM_H2O_MEAN:
+      value: 13.3192
+    CUSTOM_DEW_POINT_MEAN:
+      value: 10.3692
+    CUSTOM_CO2_SIGNAL_STRENGTH_7500_MEAN:
+      value: 94.7391
+    CUSTOM_CH4_MEAN:
+      value: 1.90657
+    CUSTOM_RSSI_77_MEAN:
+      value: 47.7153
+    CUSTOM_CH4_TC_1_MEAN:
+      value: 9999.99
+    CUSTOM_CH4_TC_2_MEAN:
+      value: 9999.99
+    CUSTOM_CH4_TC_3_MEAN:
+      value: 9999.99
+    NUM_BIOMET_VARS:
+      value: 20
+    ALB_1_1_1:
+      value: 0.0881103
+    CHK__1_1_1:
+      value: 115.433
+    DAQM_T_1_1_1:
+      value: 18.0922
+    VIN_1_1_1:
+      value: 12.3008
+    DRM_POWER_STATUS_1_1_1:
+      value: 15.0
+    DRM_V_BATTERY_1_1_1:
+      value: 12.5229
+    DRM_V_MAIN_1_1_1:
+      value: 28.9238
+    LWIN_1_1_1:
+      value: 319.608
+    LWOUT_1_1_1:
+      value: 389.871
+    PPFD_1_1_1:
+      value: 576.69
+    P_RAIN_1_1_1:
+      value: 0.0
+    RH_1_1_1:
+      value: 72.4155
+    RN_1_1_1:
+      value: 251.741
+    SWIN_1_1_1:
+      value: 353.064
+    SWOUT_1_1_1:
+      value: 31.0603
+    TA_1_1_1:
+      value: 15.1546
+    TCNR4_C_1_1_1:
+      value: 15.4224
+    TS_1_1_1:
+      value: -100.296
+    TS_2_1_1:
+      value: -49.5979
+    TS_3_1_1:
+      value: -120.873
+  eddypro/eddypro_exp_biomet_2022-09-04T083149_exp.csv:
+    date:
+      unit: '[yyyy-mm-dd]'
+      value: '2022-09-04'
+    time:
+      unit: '[HH:MM]'
+      value: 08:30
+    DOY:
+      unit: '[ddd.ddd]'
+      value: 247.3541
+    ALB_1_1_1:
+      unit: '[%]'
+      value: 0.0881103
+    CHK__1_1_1:
+      unit: '[OTHER]'
+      value: 115.433
+    DAQM_T_1_1_1:
+      unit: '[C]'
+      value: 18.0922
+    VIN_1_1_1:
+      unit: '[V]'
+      value: 12.3008
+    DRM_POWER_STATUS_1_1_1:
+      unit: '[OTHER]'
+      value: 15.0
+    DRM_V_BATTERY_1_1_1:
+      unit: '[V]'
+      value: 12.5229
+    DRM_V_MAIN_1_1_1:
+      unit: '[V]'
+      value: 28.9238
+    LWIN_1_1_1:
+      unit: '[W/m^2]'
+      value: 319.608
+    LWOUT_1_1_1:
+      unit: '[W/m^2]'
+      value: 389.871
+    PPFD_1_1_1:
+      unit: "[\xB5mol/m^2/s]"
+      value: 576.69
+    P_RAIN_1_1_1:
+      unit: '[m]'
+      value: 0.0
+    RH_1_1_1:
+      unit: '[%]'
+      value: 72.4155
+    RN_1_1_1:
+      unit: '[W/m^2]'
+      value: 251.741
+    SWIN_1_1_1:
+      unit: '[W/m^2]'
+      value: 353.064
+    SWOUT_1_1_1:
+      unit: '[W/m^2]'
+      value: 31.0603
+    TA_1_1_1:
+      unit: '[K]'
+      value: 288.305
+    TCNR4_C_1_1_1:
+      unit: '[C]'
+      value: 15.4224
+    TS_1_1_1:
+      unit: '[K]'
+      value: 172.854
+    TS_2_1_1:
+      unit: '[K]'
+      value: 223.552
+    TS_3_1_1:
+      unit: '[K]'
+      value: 152.277
+  eddypro/eddypro.log: "\n *******************\n  Executing EddyPro \n *******************\n\
+    \n Reading EddyPro project file: /home/licor/node-windmill/internal/model/runs/6186/eddypro/ini/processing.eddypro..\n\
+    \ Done.\n Retrieving file names from directory:\n  \"/home/licor/node-windmill/internal/model/runs/6186/eddypro/raw_files/\"\
+    \n  1 files found.\n  Retrieving timestamps from file names.. Done.\n Done.\n\
+    \ Arranging files in chronological order.. Done.\n Creating master time series..\
+    \ Done.\n Start raw data processing: 0:00:00.000  \n Processing time period:\n\
+    \  Start: 2022-09-04 08:00\n    End: 2022-09-04 08:30\n  Total number of flux\
+    \ averaging periods: 1\n\n\n 2022-09-04  8:32:17.464: processing new flux averaging\
+    \ period\n From: 2022-09-04 08:00\n   To: 2022-09-04 08:30\n  File(s): ../2022-09-04T080000_smart3-00495.ghg\n\
+    \n  Warning(84)> Implausible displacement height value detected.\n  Warning(84)>\
+    \ Displacement height defaulted to 0.67 times the canopy height.\n\n  Warning(85)>\
+    \ Implausible roughness length value detected.\n  Warning(85)> Roughness length\
+    \  defaulted to 0.15 times the canopy height,\n  Warning(85)> or to 1.0mm if canopy\
+    \ height is zero.\n  Retrieving biomet data..\n   30 biomet records imported.\n\
+    \  Done.\n  Number of valid records available for this period:  36000\n  Calculating\
+    \ statistics.. Done.\n  Calculating user statistics.. Done.\n  Raw level statistical\
+    \ screening..\n   Absolute limits test.. Done.\n   Spike detection/removal test..\
+    \ Done.\n   Amplitude resolution and/or dropouts test.. Done.\n   Skewness & kurtosis\
+    \ test.. Done.\n  Done.\n  Despiking user set.. Done.\n  Verifying time series\
+    \ integrity.. Done.\n  Re-calculating statistics (2).. Done.\n  Re-calculating\
+    \ user statistics (2).. Done.\n  Cross-wind correction not requested or not applicable\n\
+    \  Re-calculating statistics (3).. Done.\n  Re-calculating user statistics (3)..\
+    \ Done.\n  Re-calculating statistics (4).. Done.\n  Re-calculating user statistics\
+    \ (4).. Done.\n  Performing tilt correction by: double_rotation\n  Done.\n  Re-calculating\
+    \ statistics (5).. Done.\n  Re-calculating user statistics (5).. Done.\n  Compensating\
+    \ time-lags.. Done.\n  Verifying time series integrity.. Done.\n  Re-calculating\
+    \ statistics (6).. Done.\n  Re-calculating user statistics (6).. Done.\n  Performing\
+    \ stationarity test.. Done.\n  Detrending.. Done.\n  Detrending user set.. Done.\n\
+    \  Re-calculating statistics (7).. Done.\n  Re-calculating user statistics (7)..\
+    \ Done.\n  Evaluating correlation differences with and without repeated values..\
+    \  Done.\n  Evaluating R2 on CCFs with and without repeated values..  Done.\n\
+    \  Estimating random uncertainty..\n  Done.\n  Calculating auxiliary variables..\
+    \ Done.\n  Calculating fluxes Level 0.. Done.\n   High-pass correction for anemometric\
+    \ fluxes. Method: Moncrieff et al. (2004)..\n   Done.\n   Low-pass correction\
+    \ for anemometric fluxes. Method: Moncrieff et al. (1997)..\n   Done.\n   High-pass\
+    \ correction for gas fluxes. Method: Moncrieff et al. (2004)\n   Done.\n   Low-pass\
+    \ correction for gas fluxes. Method: Moncrieff et al. (1997)\n   Done.\n  Calculating\
+    \ fluxes Level 1.. Done.\n  Calculating fluxes Level 2 and 3.. Done.\n  Calculating\
+    \ quality flags.. Done.\n  Flux averaging period processing time: 0:06:27.624\
+    \  \n\n\n Raw data processing terminated. Creating continuous datasets if necessary..\n\
+    \  Closing Full Output file.. Done.\n  Closing FLUXNET output file.. Done.\n \
+    \ Creating Biomet dataset.. Done.\n Done.\n\n ****************************************************\n\
+    \ Program EddyPro executed gracefully.\n Check results in the selected output\
+    \ directory.     \n ****************************************************\n"
+  eddypro/eddypro_exp_full_output_2022-09-04T083149_exp.csv:
+    filename:
+      unit: 'Unnamed: 0_level_1'
+      value: 2022-09-04T080000_smart3-00495.ghg
+    date:
+      unit: '[yyyy-mm-dd]'
+      value: '2022-09-04'
+    time:
+      unit: '[HH:MM]'
+      value: 08:30
+    DOY:
+      unit: '[ddd.ddd]'
+      value: 247.3541
+    daytime:
+      unit: '[1=daytime]'
+      value: 1
+    file_records:
+      unit: '[#]'
+      value: 36000
+    used_records:
+      unit: '[#]'
+      value: 36000
+    Tau:
+      unit: '[kg+1m-1s-2]'
+      value: -0.120097
+    qc_Tau:
+      unit: '[#]'
+      value: 0
+    rand_err_Tau:
+      unit: '[kg+1m-1s-2]'
+      value: .nan
+    H:
+      unit: '[W+1m-2]'
+      value: 8.08715
+    qc_H:
+      unit: '[#]'
+      value: 0
+    rand_err_H:
+      unit: '[W+1m-2]'
+      value: .nan
+    LE:
+      unit: '[W+1m-2]'
+      value: 89.3905
+    qc_LE:
+      unit: '[#]'
+      value: 0
+    rand_err_LE:
+      unit: '[W+1m-2]'
+      value: .nan
+    co2_flux:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: -1.64193
+    qc_co2_flux:
+      unit: '[#]'
+      value: 0
+    rand_err_co2_flux:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: .nan
+    h2o_flux:
+      unit: '[mmol+1s-1m-2]'
+      value: 2.01419
+    qc_h2o_flux:
+      unit: '[#]'
+      value: 0
+    rand_err_h2o_flux:
+      unit: '[mmol+1s-1m-2]'
+      value: .nan
+    ch4_flux:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: 0.0388666
+    qc_ch4_flux:
+      unit: '[#]'
+      value: 0
+    rand_err_ch4_flux:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: .nan
+    none_flux:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: .nan
+    qc_none_flux:
+      unit: '[#]'
+      value: .nan
+    rand_err_none_flux:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: .nan
+    H_strg:
+      unit: '[W+1m-2]'
+      value: .nan
+    LE_strg:
+      unit: '[W+1m-2]'
+      value: .nan
+    co2_strg:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: .nan
+    h2o_strg:
+      unit: '[mmol+1s-1m-2]'
+      value: .nan
+    ch4_strg:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: .nan
+    none_strg:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: .nan
+    co2_v-adv:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: 4.33569e-11
+    h2o_v-adv:
+      unit: '[mmol+1s-1m-2]'
+      value: 1.43506e-12
+    ch4_v-adv:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: 2.19529e-13
+    none_v-adv:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: .nan
+    co2_molar_density:
+      unit: '[mmol+1m-3]'
+      value: 15.948
+    co2_mole_fraction:
+      unit: "[\xB5mol+1mol_a-1]"
+      value: 404.73
+    co2_mixing_ratio:
+      unit: "[\xB5mol+1mol_d-1]"
+      value: 410.226
+    co2_time_lag:
+      unit: '[s]'
+      value: 0.05
+    co2_def_timelag:
+      unit: '[1=default]'
+      value: 0
+    h2o_molar_density:
+      unit: '[mmol+1m-3]'
+      value: 527.861
+    h2o_mole_fraction:
+      unit: '[mmol+1mol_a-1]'
+      value: 13.3961
+    h2o_mixing_ratio:
+      unit: '[mmol+1mol_d-1]'
+      value: 13.578
+    h2o_time_lag:
+      unit: '[s]'
+      value: 0.05
+    h2o_def_timelag:
+      unit: '[1=default]'
+      value: 0
+    ch4_molar_density:
+      unit: '[mmol+1m-3]'
+      value: 0.0807496
+    ch4_mole_fraction:
+      unit: "[\xB5mol+1mol_a-1]"
+      value: 1.91697
+    ch4_mixing_ratio:
+      unit: "[\xB5mol+1mol_d-1]"
+      value: 1.943
+    ch4_time_lag:
+      unit: '[s]'
+      value: 0.1
+    ch4_def_timelag:
+      unit: '[1=default]'
+      value: 0
+    none_molar_density:
+      unit: '[mmol+1m-3]'
+      value: .nan
+    none_mole_fraction:
+      unit: "[\xB5mol+1mol_a-1]"
+      value: .nan
+    none_mixing_ratio:
+      unit: "[\xB5mol+1mol_d-1]"
+      value: .nan
+    none_time_lag:
+      unit: '[s]'
+      value: .nan
+    none_def_timelag:
+      unit: '[1=default]'
+      value: 9
+    sonic_temperature:
+      unit: '[K]'
+      value: 295.975
+    air_temperature:
+      unit: '[K]'
+      value: 288.886
+    air_pressure:
+      unit: '[Pa]'
+      value: 94640.4
+    air_density:
+      unit: '[kg+1m-3]'
+      value: 1.13554
+    air_heat_capacity:
+      unit: '[J+1kg-1K-1]'
+      value: 1012.76
+    air_molar_volume:
+      unit: '[m+3mol-1]'
+      value: 0.0253781
+    ET:
+      unit: '[mm+1hour-1]'
+      value: 0.13052
+    water_vapor_density:
+      unit: '[kg+1m-3]'
+      value: 0.00951206
+    e:
+      unit: '[Pa]'
+      value: 1268.15
+    es:
+      unit: '[Pa]'
+      value: 1782.36
+    specific_humidity:
+      unit: '[kg+1kg-1]'
+      value: 0.00837668
+    RH:
+      unit: '[%]'
+      value: 71.1503
+    VPD:
+      unit: '[Pa]'
+      value: 514.206
+    Tdew:
+      unit: '[K]'
+      value: 283.642
+    u_unrot:
+      unit: '[m+1s-1]'
+      value: 4.2856
+    v_unrot:
+      unit: '[m+1s-1]'
+      value: 2.44066
+    w_unrot:
+      unit: '[m+1s-1]'
+      value: 0.0313266
+    u_rot:
+      unit: '[m+1s-1]'
+      value: 4.93195
+    v_rot:
+      unit: '[m+1s-1]'
+      value: -9.94718e-14
+    w_rot:
+      unit: '[m+1s-1]'
+      value: 2.71864e-15
+    wind_speed:
+      unit: '[m+1s-1]'
+      value: 4.93195
+    max_wind_speed:
+      unit: '[m+1s-1]'
+      value: 9.18551
+    wind_dir:
+      unit: '[deg_from_north]'
+      value: 150.165
+    yaw:
+      unit: '[deg]'
+      value: 29.6616
+    pitch:
+      unit: '[deg]'
+      value: 0.363932
+    roll:
+      unit: '[deg]'
+      value: .nan
+    u*:
+      unit: '[m+1s-1]'
+      value: 0.32521
+    TKE:
+      unit: '[m+2s-2]'
+      value: 0.879142
+    L:
+      unit: '[m]'
+      value: -356.881
+    (z-d)/L:
+      unit: '[#]'
+      value: -0.00692667
+    bowen_ratio:
+      unit: '[#]'
+      value: 0.0904698
+    T*:
+      unit: '[K]'
+      value: -0.0216232
+    model:
+      unit: '[0=KJ/1=KM/2=HS]'
+      value: 0
+    x_peak:
+      unit: '[m]'
+      value: 22.943
+    x_offset:
+      unit: '[m]'
+      value: -3.48168
+    x_10%:
+      unit: '[m]'
+      value: 7.87558
+    x_30%:
+      unit: '[m]'
+      value: 19.6113
+    x_50%:
+      unit: '[m]'
+      value: 29.9085
+    x_70%:
+      unit: '[m]'
+      value: 41.947
+    x_90%:
+      unit: '[m]'
+      value: 62.8443
+    un_Tau:
+      unit: '[kg+1m-1s-2]'
+      value: -0.118297
+    Tau_scf:
+      unit: '[#]'
+      value: 1.01521
+    un_H:
+      unit: '[W+1m-2]'
+      value: 12.6079
+    H_scf:
+      unit: '[#]'
+      value: 1.03389
+    un_LE:
+      unit: '[W+1m-2]'
+      value: 76.2341
+    LE_scf:
+      unit: '[#]'
+      value: 1.14939
+    un_co2_flux:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: -2.47566
+    co2_scf:
+      unit: '[#]'
+      value: 1.14939
+    un_h2o_flux:
+      unit: '[mmol+1s-1m-2]'
+      value: 1.71774
+    h2o_scf:
+      unit: '[#]'
+      value: 1.14939
+    un_ch4_flux:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: 0.0277038
+    ch4_scf:
+      unit: '[#]'
+      value: 1.19498
+    un_none_flux:
+      unit: "[\xB5mol+1s-1m-2]"
+      value: .nan
+    un_none_scf:
+      unit: '[#]'
+      value: .nan
+    spikes_hf:
+      unit: 8u/v/w/ts/co2/h2o/ch4/none
+      value: 800000009
+    amplitude_resolution_hf:
+      unit: 8u/v/w/ts/co2/h2o/ch4/none
+      value: 800000009
+    drop_out_hf:
+      unit: 8u/v/w/ts/co2/h2o/ch4/none
+      value: 800000009
+    absolute_limits_hf:
+      unit: 8u/v/w/ts/co2/h2o/ch4/none
+      value: 800000009
+    skewness_kurtosis_hf:
+      unit: 8u/v/w/ts/co2/h2o/ch4/none
+      value: 800000019
+    skewness_kurtosis_sf:
+      unit: 8u/v/w/ts/co2/h2o/ch4/none
+      value: 800000019
+    discontinuities_hf:
+      unit: 8u/v/w/ts/co2/h2o/ch4/none
+      value: 899999999
+    discontinuities_sf:
+      unit: 8u/v/w/ts/co2/h2o/ch4/none
+      value: 899999999
+    timelag_hf:
+      unit: 8co2/h2o/ch4/none
+      value: 89999
+    timelag_sf:
+      unit: 8co2/h2o/ch4/none
+      value: 89999
+    attack_angle_hf:
+      unit: 8aa
+      value: 89
+    non_steady_wind_hf:
+      unit: 8U
+      value: 89
+    u_spikes:
+      unit: '[#]'
+      value: 66
+    v_spikes:
+      unit: '[#]'
+      value: 36
+    w_spikes:
+      unit: '[#]'
+      value: 13
+    ts_spikes:
+      unit: '[#]'
+      value: 26
+    co2_spikes:
+      unit: '[#]'
+      value: 53
+    h2o_spikes:
+      unit: '[#]'
+      value: 37
+    ch4_spikes:
+      unit: '[#]'
+      value: 15
+    none_spikes:
+      unit: '[#]'
+      value: .nan
+    head_detect_LI-7200:
+      unit: '[#_flagged_recs]'
+      value: .nan
+    t_out_LI-7200:
+      unit: '[#_flagged_recs]'
+      value: .nan
+    t_in_LI-7200:
+      unit: '[#_flagged_recs]'
+      value: .nan
+    aux_in_LI-7200:
+      unit: '[#_flagged_recs]'
+      value: .nan
+    delta_p_LI-7200:
+      unit: '[#_flagged_recs]'
+      value: .nan
+    chopper_LI-7200:
+      unit: '[#_flagged_recs]'
+      value: .nan
+    detector_LI-7200:
+      unit: '[#_flagged_recs]'
+      value: .nan
+    pll_LI-7200:
+      unit: '[#_flagged_recs]'
+      value: .nan
+    sync_LI-7200:
+      unit: '[#_flagged_recs]'
+      value: .nan
+    chopper_LI-7500:
+      unit: '[#_flagged_recs]'
+      value: 0
+    detector_LI-7500:
+      unit: '[#_flagged_recs]'
+      value: 0
+    pll_LI-7500:
+      unit: '[#_flagged_recs]'
+      value: 0
+    sync_LI-7500:
+      unit: '[#_flagged_recs]'
+      value: 0
+    not_ready_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 0
+    no_signal_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 0
+    re_unlocked_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 0
+    bad_temp_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 0
+    laser_temp_unregulated_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 0
+    block_temp_unregulated_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 0
+    motor_spinning_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 1201
+    pump_on_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 0
+    top_heater_on_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 0
+    bottom_heater_on_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 0
+    calibrating_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 0
+    motor_failure_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 31
+    bad_aux_tc1_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 36000
+    bad_aux_tc2_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 36000
+    bad_aux_tc3_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 36000
+    box_connected_LI-7700:
+      unit: '[#_flagged_recs]'
+      value: 36000
+    mean_value_RSSI_LI-7200:
+      unit: '[#]'
+      value: .nan
+    mean_value_LI-7500:
+      unit: '[#]'
+      value: 93
+    u_var:
+      unit: '[m+2s-2]'
+      value: 0.828691
+    v_var:
+      unit: '[m+2s-2]'
+      value: 0.748548
+    w_var:
+      unit: '[m+2s-2]'
+      value: 0.181045
+    ts_var:
+      unit: '[K+2]'
+      value: 0.0996826
+    co2_var:
+      unit: --
+      value: 0.00204581
+    h2o_var:
+      unit: --
+      value: 222.773
+    ch4_var:
+      unit: --
+      value: 1.48152e-07
+    none_var:
+      unit: --
+      value: .nan
+    w/ts_cov:
+      unit: '[m+1s-1K+1]'
+      value: 0.0109631
+    w/co2_cov:
+      unit: --
+      value: -0.00247566
+    w/h2o_cov:
+      unit: --
+      value: 1.71774
+    w/ch4_cov:
+      unit: --
+      value: 2.77038e-05
+    w/none_cov:
+      unit: --
+      value: .nan
+    air_t_mean:
+      unit: --
+      value: 287.961
+    air_p_mean:
+      unit: --
+      value: 94881.0
+    vin_sf_mean:
+      unit: --
+      value: 12.2895
+    co2_mean:
+      unit: --
+      value: 402.411
+    h2o_mean:
+      unit: --
+      value: 13.3192
+    dew_point_mean:
+      unit: --
+      value: 10.3692
+    co2_signal_strength_7500_mean:
+      unit: --
+      value: 94.7391
+    ch4_mean:
+      unit: --
+      value: 1.90657
+    rssi_77_mean:
+      unit: --
+      value: 47.7153
+    ch4_tc_1_mean:
+      unit: --
+      value: 9999.99
+    ch4_tc_2_mean:
+      unit: --
+      value: 9999.99
+    ch4_tc_3_mean:
+      unit: --
+      value: 9999.99
