@@ -8,7 +8,7 @@ import xmltodict
 import configparser
 import pandas as pd
 from io import TextIOWrapper
-from readSystemConfig import pareseConfig
+from . import readSystemConfig
 
 ## Written by June Skeeter 11/23/2025
 # This script can parse a zipped .ghg file to all sub-components and return relevant data values
@@ -58,7 +58,7 @@ class parseGHG():
                     elif self.file.endswith('.metadata') or (self.file.endswith('processing') and depth == 'full'):
                         self.ini2dict(TextIOWrapper(f, 'utf-8'))
                     elif self.file.endswith('.conf') and depth == 'full':
-                        self.Metadata['Contents'][self.name] = pareseConfig(f.readline().decode('ascii'))
+                        self.Metadata['Contents'][self.name] = readSystemConfig.pareseConfig(f.readline().decode('ascii'))
                     elif self.file.endswith('.json') and depth == 'full':
                         self.Metadata['Contents'][self.name] = json.load(TextIOWrapper(f, 'utf-8'))
                     elif self.file.endswith('.log') and depth == 'full':
