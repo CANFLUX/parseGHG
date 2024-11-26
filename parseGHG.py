@@ -41,7 +41,7 @@ class parseGHG():
         fn = os.path.split(file)[1].rsplit('.',1)[0]
         self.Metadata['Timestamp'] = pd.to_datetime(datetime.datetime.strptime(
                 re.search('([0-9]{4}\-[0-9]{2}\-[0-9]{2}T[0-9]{6})',
-                    fn).group(0),'%Y-%m-%dT%H%M%S')).strftime('%Y-%m-%d %H:%M')
+                    fn).group(0),'%Y-%m-%dT%H%M%S')).strftime('%Y-%m-%d %H:%M:%S')
         
         with zipfile.ZipFile(file, 'r') as ghgZip:
             subFiles=ghgZip.namelist()
@@ -51,7 +51,7 @@ class parseGHG():
 
             # Get all possible contents of ghg file, for now only concerned with .data and .metadata, can expand to biomet and config/calibration files later
             for self.file in subFiles:
-                self.name = self.file.replace(fn,'').lstrip('-')
+                self.name = self.file.replace(fn,'').replace('.','').lstrip('-')
                 with ghgZip.open(self.file) as f:
                     if self.file.endswith('.data') or self.file.endswith('.status'):
                         self.readDATA(f)
@@ -118,6 +118,8 @@ class parseGHG():
         if 'Station' in d.keys():
             self.Metadata['SerialNo'] = d['Station']['logger_id']
             self.Metadata['StationName'] = d['Station']['station_name']
+        elif 'Site' in d.keys():
+            self.Metadata['StationName'] = d['Site']['site_name']
         if 'Timing' in d.keys():
             self.Metadata['Frequency'] = d['Timing']['acquisition_frequency'] + ' Hz'
 
