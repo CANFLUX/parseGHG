@@ -6,9 +6,9 @@ Program: null
 Table: Flux_Data
 Frequency: 20.0 Hz
 Timezone: Etc/GMT+6
-Timestamp: 2022-09-04 08:00
+Timestamp: '2022-09-04 08:00:00'
 Contents:
-  .data:
+  data:
     Model: LI-7500DS Open Path CO2/H2O Analyzer
     SN: 75D-4392
     Instrument: smart3-00495
@@ -70,7 +70,7 @@ Contents:
       col_50: CH4 Diagnostic Value
       col_51: CH4 Drop Rate (%)
       col_52: CHK
-  .metadata:
+  metadata:
     Site:
       site_name: YOUNG_CE
       altitude: '602.3'
@@ -803,7 +803,7 @@ Contents:
       col_52_nom_timelag: '0'
       col_52_min_timelag: '0'
       col_52_max_timelag: '0'
-  biomet.data:
+  biometdata:
     Instrument: smart3-00495 CK-00239
     File Type: '2'
     Software Version: 8.9.0
@@ -834,7 +834,7 @@ Contents:
       col_21: TS_2_1_1(C)
       col_22: TS_3_1_1(C)
       col_23: CHK
-  biomet.metadata:
+  biometmetadata:
     BiometFileDescription:
       biomet_separator: tab
       biomet_header_rows: '6'
@@ -996,7 +996,7 @@ Contents:
       biomet_22_gain: ''
       biomet_22_offset: ''
       biomet_22_unit_out: ''
-  system_config/co2app.conf:
+  system_config/co2appconf:
     LI7200:
     - Outputs:
       - ENet:
@@ -1217,7 +1217,7 @@ Contents:
             - Company: ''
     - LI7500DS:
         HostName: DSI-00555
-  system_config/aligner.log: 'GHG File: /home/licor/node-windmill/internal/model/runs/6186/eddypro/raw_files/2022-09-04T080000_smart3-00495.ghg
+  system_config/alignerlog: 'GHG File: /home/licor/node-windmill/internal/model/runs/6186/eddypro/raw_files/2022-09-04T080000_smart3-00495.ghg
 
     Sonic type: wmpro Sonic SN: W201905 Sonic Filter: runavg
 
@@ -1248,7 +1248,7 @@ Contents:
     Percentage missing data points:      0 %
 
     '
-  system_config/ttyS1.json:
+  system_config/ttyS1json:
     config: M1,U1,O2,L1,P9,B5,H1,NQ,E1,T1,S1,C2,A3,I1,J2,V1,X1,G0,K50,
     instrument: WindMaster Pro 32Hz (SS) Gill Instruments Ltd
     output_rate: '32'
@@ -1256,7 +1256,7 @@ Contents:
     signal_processing: RETRY 0, INSTANT 1, CALIB 1
     software_version: 2329-701-01
     sonic_type: wmpro
-  system_config/config.json:
+  system_config/configjson:
     export:
       begin-minutes: 0
       allow-self-signed-ssl: true
@@ -1278,12 +1278,12 @@ Contents:
       instrument: WindMaster Pro 32Hz (SS) Gill Instruments Ltd
       software_version: 2329-701-01
       device: wmpro
-  system_config/usb_stats.json:
+  system_config/usb_statsjson:
     usb:
       used: 2220613632
       total: 15996116992
       free: 13775503360
-  system_config/TG1-0689_config.xml:
+  system_config/TG1-0689_configxml:
     licor:
       li7700:
         ver: 1.0.29
@@ -1562,7 +1562,7 @@ Contents:
           cmd:
             commit: 'false'
             rollback: 'false'
-  system_config/sf23_status.json:
+  system_config/sf23_statusjson:
     avahi-daemon.service: active
     chronyd.service: active
     glogger-eddypro.service: active
@@ -1622,7 +1622,7 @@ Contents:
     sf23_db_size: '113152000'
     serial-number: smart3-00495
     software-version: 2.4.0
-  system_config/DSI-00555_factory.xml:
+  system_config/DSI-00555_factoryxml:
     licor:
       li7500ds:
         factory:
@@ -1695,7 +1695,7 @@ Contents:
             kp: '0.5'
             ki: '1'
             kd: '3'
-  system_config/DSI-00555_cal.xml:
+  system_config/DSI-00555_calxml:
     licor:
       li7500ds:
         cal:
@@ -1722,7 +1722,7 @@ Contents:
           rssi_cx: '34902'
           rssi_wx: '52050.3'
           rssidate: '1638392023'
-  eddypro/eddypro_exp_fluxnet_2022-09-04T083149_exp.csv:
+  eddypro/eddypro_exp_fluxnet_2022-09-04T083149_expcsv:
     TIMESTAMP_START:
       value: 202209040800
     TIMESTAMP_END:
@@ -2735,7 +2735,7 @@ Contents:
       value: -49.5979
     TS_3_1_1:
       value: -120.873
-  eddypro/eddypro_exp_biomet_2022-09-04T083149_exp.csv:
+  eddypro/eddypro_exp_biomet_2022-09-04T083149_expcsv:
     date:
       unit: '[yyyy-mm-dd]'
       value: '2022-09-04'
@@ -2805,7 +2805,7 @@ Contents:
     TS_3_1_1:
       unit: '[K]'
       value: 152.277
-  eddypro/eddypro.log: "\n *******************\n  Executing EddyPro \n *******************\n\
+  eddypro/eddyprolog: "\n *******************\n  Executing EddyPro \n *******************\n\
     \n Reading EddyPro project file: /home/licor/node-windmill/internal/model/runs/6186/eddypro/ini/processing.eddypro..\n\
     \ Done.\n Retrieving file names from directory:\n  \"/home/licor/node-windmill/internal/model/runs/6186/eddypro/raw_files/\"\
     \n  1 files found.\n  Retrieving timestamps from file names.. Done.\n Done.\n\
@@ -2849,7 +2849,7 @@ Contents:
     \ Creating Biomet dataset.. Done.\n Done.\n\n ****************************************************\n\
     \ Program EddyPro executed gracefully.\n Check results in the selected output\
     \ directory.     \n ****************************************************\n"
-  eddypro/eddypro_exp_full_output_2022-09-04T083149_exp.csv:
+  eddypro/eddypro_exp_full_output_2022-09-04T083149_expcsv:
     filename:
       unit: 'Unnamed: 0_level_1'
       value: 2022-09-04T080000_smart3-00495.ghg

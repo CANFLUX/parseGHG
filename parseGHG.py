@@ -8,7 +8,10 @@ import xmltodict
 import configparser
 import pandas as pd
 from io import TextIOWrapper
-from . import readSystemConfig
+try:
+    from . import readSystemConfig
+except:
+    import readSystemConfig
 
 ## Written by June Skeeter 11/23/2025
 # This script can parse a zipped .ghg file to all sub-components and return relevant data values
