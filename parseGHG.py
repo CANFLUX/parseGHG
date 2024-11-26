@@ -77,9 +77,9 @@ class parseGHG():
                             self.readEP(f,header=[0])
         if self.mode >1:
             self.Data = {}
-            for l,t in {'.data':['Date','Time'],
-                        'biomet.data':['DATE','TIME'],
-                        '.status':['Seconds','Nanoseconds']}.items():
+            for l,t in {'data':['Date','Time'],
+                        'biometdata':['DATE','TIME'],
+                        'li7700status':['SECONDS','NANOSECONDS']}.items():
                 if l in self.Metadata['Contents'].keys():
                     self.Data[l] = {}
                     df = self.Metadata['Contents'][l].pop('Data')
