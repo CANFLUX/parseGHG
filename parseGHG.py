@@ -48,7 +48,7 @@ class parseGHG():
         
         with zipfile.ZipFile(file, 'r') as ghgZip:
             subFiles=ghgZip.namelist()
-            self.Metadata['Contents'] = {}
+            self.Contents = {}
             if verbose == True:
                 print(f'Contents of {file}: \n\n'+'\n'.join(f for f in subFiles))
 
@@ -58,16 +58,16 @@ class parseGHG():
                 with ghgZip.open(self.file) as f:
                     if self.file.endswith('.data') or self.file.endswith('.status'):
                         self.readDATA(f)
-                    elif self.file.endswith('.metadata') or (self.file.endswith('processing') and depth == 'full'):
+                    elif self.file.endswith('.metadata') or (self.file.endswith('eddypro') and depth == 'full'):
                         self.ini2dict(TextIOWrapper(f, 'utf-8'))
                     elif self.file.endswith('.conf') and depth == 'full':
-                        self.Metadata['Contents'][self.name] = readSystemConfig.pareseConfig(f.readline().decode('ascii'))
+                        self.Contents[self.name] = readSystemConfig.pareseConfig(f.readline().decode('ascii'))
                     elif self.file.endswith('.json') and depth == 'full':
-                        self.Metadata['Contents'][self.name] = json.load(TextIOWrapper(f, 'utf-8'))
+                        self.Contents[self.name] = json.load(TextIOWrapper(f, 'utf-8'))
                     elif self.file.endswith('.log') and depth == 'full':
-                        self.Metadata['Contents'][self.name] = TextIOWrapper(f, 'utf-8').read()
+                        self.Contents[self.name] = TextIOWrapper(f, 'utf-8').read()
                     elif self.file.endswith('.xml') and depth == 'full':
-                        self.Metadata['Contents'][self.name] = xmltodict.parse(f)
+                        self.Contents[self.name] = xmltodict.parse(f)
                     elif self.file.endswith('.csv') and depth == 'full':
                         if 'full_output' in self.file:
                             self.readEP(f,header=[0,1],skiprows=[0])
@@ -75,14 +75,20 @@ class parseGHG():
                             self.readEP(f,header=[0,1])
                         else:
                             self.readEP(f,header=[0])
+                    t = os.path.split(self.name)
+                    if len(t[0])>0 and len(t[1])>0 and self.name in self.Contents.keys():
+                        tmp = self.Contents.pop(self.name)
+                        if t[0] not in self.Contents.keys():
+                            self.Contents[t[0]] = {}
+                        self.Contents[t[0]][t[1]] = tmp
         if self.mode >1:
             self.Data = {}
             for l,t in {'data':['Date','Time'],
                         'biometdata':['DATE','TIME'],
                         'li7700status':['SECONDS','NANOSECONDS']}.items():
-                if l in self.Metadata['Contents'].keys():
+                if l in self.Contents.keys():
                     self.Data[l] = {}
-                    df = self.Metadata['Contents'][l].pop('Data')
+                    df = self.Contents[l].pop('Data')
                     if t[0].lower()=='date':
                         df.index = pd.to_datetime(df[t[0]]+' '+df[t[1]],format='%Y-%m-%d %H:%M:%S:%f')
                     else:
@@ -98,8 +104,8 @@ class parseGHG():
             if len(Line)==2:
                 d[Line[0].replace(':','')]=Line[1]
             else:
-                Header = {f'col_{i}':c for i,c in enumerate(Line)}
-                d['Header'] = Header
+                # Header = {f'col_{i}':c for i,c in enumerate(Line)}
+                d['Header'] = Line
             i += 1
         if self.mode > 1:
             df = pd.read_csv(f,header=None,sep='\t')
@@ -111,13 +117,13 @@ class parseGHG():
             self.Metadata['Table'] = 'Flux_Data'
         if self.Metadata['Timezone'] is None:
             self.Metadata['Timezone'] = d['Timezone']
-        self.Metadata['Contents'][self.name]  = d
+        self.Contents[self.name]  = d
 
     def ini2dict(self,f):
         cfg = configparser.ConfigParser()
         cfg.read_file(f)
         d = cfg._sections
-        self.Metadata['Contents'][self.name]  = d
+        self.Contents[self.name]  = d
         if 'Station' in d.keys():
             self.Metadata['SerialNo'] = d['Station']['logger_id']
             self.Metadata['StationName'] = d['Station']['station_name']
@@ -136,4 +142,4 @@ class parseGHG():
             for c in df.columns:
                 d[str(c[0])]={'unit':str(c[1]),
                         'value':df[c].tolist()[0]}
-        self.Metadata['Contents'][self.name]  = d
+        self.Contents[self.name]  = d
