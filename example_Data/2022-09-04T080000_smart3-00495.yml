@@ -1,9 +1,9 @@
 Type: GHG
+Table: null
 StationName: DUC2
-LoggerModel: LI-7500DS Open Path CO2/H2O Analyzer
+Logger: LI-7500DS
 SerialNo: smart3-00495
-Program: null
-Table: Flux_Data
-Frequency: 20.0 Hz
+Program: Smartflux8.9.0
+Timestamp: 2022-09-04T0800
+Frequency: 0.05s
 Timezone: Etc/GMT+6
-Timestamp: '2022-09-04 08:00:00'

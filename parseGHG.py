@@ -8,6 +8,8 @@ import xmltodict
 import configparser
 import pandas as pd
 from io import TextIOWrapper
+from dataclasses import dataclass,field
+
 try:
     from . import readSystemConfig
 except:
@@ -32,26 +34,39 @@ except:
 # Timestamp - numpy array in POSIX format from logger time
 
 
-class parseGHG():
-    def __init__(self,log=False):
-        self.log=log
-        c = os.path.dirname(os.path.abspath(__file__))
-        with open(os.path.join(c,'config_files','defaultMetadata.yml'),'r') as f:
-            self.Metadata = yaml.safe_load(f)
+def load():
+    c = os.path.dirname(os.path.abspath(__file__))
+    pth = os.path.join(c,'config_files','defaultMetadata.yml')
+    with open(pth,'r') as f:
+        defaults = yaml.safe_load(f)
+    return(defaults)
+@dataclass
+class Metadata:
+    log: bool = False
+    verbose: bool = False
+    mode: int = 1
+    Metadata: dict = field(default_factory=load)
+    Contents: dict = field(default_factory=lambda:{'data':None,
+                                                'metadata':None,
+                                                'biometdata':None,
+                                                'biometmetadata':None,
+                                                'system_config':{},
+                                                'eddypro':{}})
+
+class parseGHG(Metadata):
+    def __init__(self,**kwds):
+        super().__init__(**kwds)
         
-    def parse(self,file,mode=1,saveTo=None,depth='base',verbose=False):
-        self.mode = mode
-        fn = os.path.split(file)[1].rsplit('.',1)[0]
-        self.Metadata['Timestamp'] = pd.to_datetime(datetime.datetime.strptime(
-                re.search('([0-9]{4}\-[0-9]{2}\-[0-9]{2}T[0-9]{6})',
-                    fn).group(0),'%Y-%m-%dT%H%M%S')).strftime('%Y-%m-%d %H:%M:%S')
-        
+    def parse(self,file,saveTo=None,depth='base',):
         with zipfile.ZipFile(file, 'r') as ghgZip:
             subFiles=ghgZip.namelist()
-            self.Contents = {}
-            if verbose == True:
+            if self.verbose == True:
                 print(f'Contents of {file}: \n\n'+'\n'.join(f for f in subFiles))
-
+            
+            fn = os.path.commonprefix([s for s in subFiles if len(os.path.split(s)[0])==0])  
+            self.Metadata['Timestamp'] = pd.to_datetime(datetime.datetime.strptime(
+                    re.search('([0-9]{4}\-[0-9]{2}\-[0-9]{2}T[0-9]{6})',
+                        fn).group(0),'%Y-%m-%dT%H%M%S')).strftime('%Y-%m-%dT%H%M')
             # Get all possible contents of ghg file, for now only concerned with .data and .metadata, can expand to biomet and config/calibration files later
             for self.file in subFiles:
                 self.name = self.file.replace(fn,'').replace('.','').lstrip('-')
@@ -80,6 +95,7 @@ class parseGHG():
                         tmp = self.Contents.pop(self.name)
                         if t[0] not in self.Contents.keys():
                             self.Contents[t[0]] = {}
+                        print(t)
                         self.Contents[t[0]][t[1]] = tmp
         if self.mode >1:
             self.Data = {}
@@ -111,12 +127,10 @@ class parseGHG():
             df = pd.read_csv(f,header=None,sep='\t')
             df.columns=Line
             d['Data'] = df.copy()
-        if self.Metadata['LoggerModel'] is None:
-            self.Metadata['LoggerModel'] = d['Model']
-        if self.Metadata['Table'] is None:
-            self.Metadata['Table'] = 'Flux_Data'
         if self.Metadata['Timezone'] is None:
             self.Metadata['Timezone'] = d['Timezone']
+        if self.Metadata['Logger'] is None:
+            self.Metadata['Logger'] = d['Model'].split(' ')[0]
         self.Contents[self.name]  = d
 
     def ini2dict(self,f):
@@ -126,11 +140,15 @@ class parseGHG():
         self.Contents[self.name]  = d
         if 'Station' in d.keys():
             self.Metadata['SerialNo'] = d['Station']['logger_id']
-            self.Metadata['StationName'] = d['Station']['station_name']
+            if d['Station']['station_name'] != '':
+                self.Metadata['StationName'] = d['Station']['station_name']
+            else:
+                self.Metadata['StationName'] = None
+            self.Metadata['Program'] = 'Smartflux'+d['Station']['logger_sw_version']
         elif 'Site' in d.keys():
             self.Metadata['StationName'] = d['Site']['site_name']
         if 'Timing' in d.keys():
-            self.Metadata['Frequency'] = d['Timing']['acquisition_frequency'] + ' Hz'
+            self.Metadata['Frequency'] = str(1/float(d['Timing']['acquisition_frequency'])) + 's'
 
     def readEP(self,f,header=None,skiprows=None):
         df = pd.read_csv(f,header=header,skiprows=skiprows,encoding='utf-8')

@@ -1,8 +1,10 @@
 Type: GHG
+Table:
 StationName:
-LoggerModel:
+Logger:
 SerialNo:
 Program:
-Table:
+Timestamp:
 Frequency:
 Timezone:
+

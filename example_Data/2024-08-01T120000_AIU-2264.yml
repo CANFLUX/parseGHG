@@ -1,9 +1,0 @@
-Type: GHG
-StationName: Flux Tower
-LoggerModel: LI-7200 Enclosed CO2/H2O Analyzer
-SerialNo: AIU-2264
-Program: null
-Table: Flux_Data
-Frequency: 20.0 Hz
-Timezone: Etc/GMT+8
-Timestamp: '2024-08-01 12:00:00'
