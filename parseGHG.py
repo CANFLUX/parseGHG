@@ -58,45 +58,48 @@ class parseGHG(Metadata):
         super().__init__(**kwds)
         
     def parse(self,file,saveTo=None,depth='base',):
-        with zipfile.ZipFile(file, 'r') as ghgZip:
-            subFiles=ghgZip.namelist()
-            if self.verbose == True:
-                print(f'Contents of {file}: \n\n'+'\n'.join(f for f in subFiles))
-            
-            fn = os.path.commonprefix([s for s in subFiles if len(os.path.split(s)[0])==0])  
-            self.Metadata['Timestamp'] = pd.to_datetime(datetime.datetime.strptime(
-                    re.search('([0-9]{4}\-[0-9]{2}\-[0-9]{2}T[0-9]{6})',
-                        fn).group(0),'%Y-%m-%dT%H%M%S')).strftime('%Y-%m-%dT%H%M')
-            # Get all possible contents of ghg file, for now only concerned with .data and .metadata, can expand to biomet and config/calibration files later
-            for self.file in subFiles:
-                self.name = self.file.replace(fn,'').replace('.','').lstrip('-')
-                with ghgZip.open(self.file) as f:
-                    if self.file.endswith('.data') or self.file.endswith('.status'):
-                        self.readDATA(f)
-                    elif self.file.endswith('.metadata') or (self.file.endswith('eddypro') and depth == 'full'):
-                        self.ini2dict(TextIOWrapper(f, 'utf-8'))
-                    elif self.file.endswith('.conf') and depth == 'full':
-                        self.Contents[self.name] = readSystemConfig.pareseConfig(f.readline().decode('ascii'))
-                    elif self.file.endswith('.json') and depth == 'full':
-                        self.Contents[self.name] = json.load(TextIOWrapper(f, 'utf-8'))
-                    elif self.file.endswith('.log') and depth == 'full':
-                        self.Contents[self.name] = TextIOWrapper(f, 'utf-8').read()
-                    elif self.file.endswith('.xml') and depth == 'full':
-                        self.Contents[self.name] = xmltodict.parse(f)
-                    elif self.file.endswith('.csv') and depth == 'full':
-                        if 'full_output' in self.file:
-                            self.readEP(f,header=[0,1],skiprows=[0])
-                        elif 'biomet' in self.file:
-                            self.readEP(f,header=[0,1])
-                        else:
-                            self.readEP(f,header=[0])
-                    t = os.path.split(self.name)
-                    if len(t[0])>0 and len(t[1])>0 and self.name in self.Contents.keys():
-                        tmp = self.Contents.pop(self.name)
-                        if t[0] not in self.Contents.keys():
-                            self.Contents[t[0]] = {}
-                        print(t)
-                        self.Contents[t[0]][t[1]] = tmp
+        try:
+            with zipfile.ZipFile(file, 'r') as ghgZip:
+                subFiles=ghgZip.namelist()
+                if self.verbose == True:
+                    print(f'Contents of {file}: \n\n'+'\n'.join(f for f in subFiles))
+                
+                fn = os.path.commonprefix([s for s in subFiles if len(os.path.split(s)[0])==0])  
+                self.Metadata['Timestamp'] = pd.to_datetime(datetime.datetime.strptime(
+                        re.search('([0-9]{4}\-[0-9]{2}\-[0-9]{2}T[0-9]{6})',
+                            fn).group(0),'%Y-%m-%dT%H%M%S')).strftime('%Y-%m-%dT%H%M')
+                # Get all possible contents of ghg file, for now only concerned with .data and .metadata, can expand to biomet and config/calibration files later
+                for self.file in subFiles:
+                    self.name = self.file.replace(fn,'').replace('.','').lstrip('-')
+                    with ghgZip.open(self.file) as f:
+                        if self.file.endswith('.data') or self.file.endswith('.status'):
+                            self.readDATA(f)
+                        elif self.file.endswith('.metadata') or (self.file.endswith('eddypro') and depth == 'full'):
+                            self.ini2dict(TextIOWrapper(f, 'utf-8'))
+                        elif self.file.endswith('.conf') and depth == 'full':
+                            self.Contents[self.name] = readSystemConfig.pareseConfig(f.readline().decode('ascii'))
+                        elif self.file.endswith('.json') and depth == 'full':
+                            self.Contents[self.name] = json.load(TextIOWrapper(f, 'utf-8'))
+                        elif self.file.endswith('.log') and depth == 'full':
+                            self.Contents[self.name] = TextIOWrapper(f, 'utf-8').read()
+                        elif self.file.endswith('.xml') and depth == 'full':
+                            self.Contents[self.name] = xmltodict.parse(f)
+                        elif self.file.endswith('.csv') and depth == 'full':
+                            if 'full_output' in self.file:
+                                self.readEP(f,header=[0,1],skiprows=[0])
+                            elif 'biomet' in self.file:
+                                self.readEP(f,header=[0,1])
+                            else:
+                                self.readEP(f,header=[0])
+                        t = os.path.split(self.name)
+                        if len(t[0])>0 and len(t[1])>0 and self.name in self.Contents.keys():
+                            tmp = self.Contents.pop(self.name)
+                            if t[0] not in self.Contents.keys():
+                                self.Contents[t[0]] = {}
+                            self.Contents[t[0]][t[1]] = tmp
+        except:
+            self.mode = 0
+            print('unable to extract file')
         if self.mode >1:
             self.Data = {}
             for l,t in {'data':['Date','Time'],
@@ -142,6 +145,8 @@ class parseGHG(Metadata):
             self.Metadata['SerialNo'] = d['Station']['logger_id']
             if d['Station']['station_name'] != '':
                 self.Metadata['StationName'] = d['Station']['station_name']
+            elif d['Site']['site_name'] != '':
+                self.Metadata['StationName'] = d['Site']['site_name']
             else:
                 self.Metadata['StationName'] = None
             self.Metadata['Program'] = 'Smartflux'+d['Station']['logger_sw_version']
